@@ -131,3 +131,14 @@ aside>div{
     width: 200px;
     height: 200px;
 }
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-heart{
+    color:red;
+}
