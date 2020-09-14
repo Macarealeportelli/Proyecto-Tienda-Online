@@ -14,20 +14,27 @@
 
     <nav>
         <div>logo</div>
-        <div>carrito</div>
+        <button class="boton-carrito">
+            <i class="fas fa-shopping-cart"></i>
+            Carrito (0 items)
+        </button>
     </nav>
 
     <header>ELECTRONICA</header>
 
     <section class="principal">
         <aside>
-            <div>
-                <p>Filtros</p>
+            <div class="filtro">
+                Filtros
+                <button class="limpiar"><i class="fas fa-trash-alt"></i>Limpiar</button>
             </div>
 
             <div>
                 <form action="">
-                    <div class="titulo-filtro"> Búsqueda <input type="text"></div>
+                    <div>
+                        <div class="titulo-filtro"> Búsqueda <input type="text"></div>
+                        <i class="fas fa-search"></i>
+                    </div>
                     <label for="categoria" class="categorias">
                         <div class="titulo-filtro">Categoría</div>
                         <div> <input type="checkbox" id="categoria">Notebooks</div>
@@ -92,7 +99,14 @@
         </aside>
 
         <div class="seccion-tarjetas">
-            <div class="barrita-superior-tarjetas">barrita de navegacion con filtros</div>
+            <div class="encabezado-tarjetas">
+                <p>Mostrando 12 productos de (12)</p>
+                <div class="ver-como">
+                    <p>Ver como </p>
+                    <button class="boton-grilla"> <i class="fas fa-th"></i></button>
+                    <button class="boton-lista"> <i class="fas fa-list"></i></button>
+                </div>
+            </div>
             <div class="contenedor-tarjetas">
                 <div class="tarjeta">
                     <div class="imagen-producto"></div>
