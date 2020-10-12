@@ -61,6 +61,11 @@ nav{
 }
 
 
+h1{
+    color: white;
+}
+
+
 /*SECCIÓN QUE CONTIENE FILTROS Y SECCIÓN CONTENEDORA DE TARJETAS*/
 .principal {
     display: flex;
@@ -110,7 +115,14 @@ h3{
 }
 
 /*POSICIONAMIENTO DE LUPA EN INPUT DE BUSQUEDA*/
-
+.search{
+    position: relative;
+}
+#lupita{
+    position: absolute;
+    left: 175px;
+    top: 585px;
+}
 
 
 .filtros label input {
