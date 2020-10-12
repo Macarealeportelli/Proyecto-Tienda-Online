@@ -217,23 +217,28 @@ h3{
 .tarjeta{
     background-color: #fafafa;
     margin:10px;
-    width: 275px;
-    height: 480px;
-
+        
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-
-   padding: 30px;
    
+    padding: 30px;
+   
+        
+}
+.grilla{
+    height: 480px;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    
+}
+
+.lista{
+    justify-content: space-between;
+    width: 100%;
 }
 
 /*DENTRO DE TARJETA*/
 .imagen-producto{
-    /* background-color: orange; */
     margin: 10px;
     height: 250px;
     width: 250px;
@@ -241,10 +246,9 @@ h3{
 }
 .imagen-producto>img{
     width: 250px;
-    
 }
 
-.contenido-producto{
+.contenido-producto-grilla{
     display: flex;
     padding: 20px;
     flex-direction: column;
@@ -252,11 +256,10 @@ h3{
     justify-content: center;
 }
 
-.boton-compra{
-  width: 200px;
-  height: 40px;
-  border: none;
-  background-color: whitesmoke;
+.contenido-producto-lista{
+    max-width: 70%;
+    padding: 20px;
+    display: block;
 }
 
 .nombre-producto{
@@ -273,8 +276,19 @@ h3{
 
 .puntaje-producto{
     display: flex;
+    margin-top: 10px;
 }
+.boton-compra{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: whitesmoke;
+    margin-top: 20px;
+  }
 
+.hidden{
+    display: none;
+}
 
 
 /*FOOTER*/
