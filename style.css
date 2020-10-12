@@ -1,36 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+body{
+    background-color: rgb(239, 239, 239);
+    color:black;
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.3)
+}
+
 nav{
-    background-color: lightcoral;
+    
     display: flex;
     width: 100%;
     height: 50px;
+    /* padding: 10px; */
     justify-content: space-between;
 }
 
-nav>div {
-    background-color: purple;
-    margin: 10px;
+.logo-container{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    margin: 15px;
 }
+
 .boton-carrito {
     border: none;
 }
 
-header { 
-    background-color: lightseagreen;
-    height: 200px;
+.banner { 
+    width: 100%;
+    height: 300px;
+    background-image: url(/imagenes/banner.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+/*SECCIÓN QUE CONTIENE FILTROS Y SECCIÓN CONTENEDORA DE TARJETAS*/
 .principal {
-    background-color:pink;
-    
     display: flex;
     align-items: flex-start;
+    margin-top: 80px;
 }
 
+/*SECCIÓN GENERAL DE FILTROS*/
+.filtros {
+    max-width: 270px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/*ASIDE*/
 aside {
-    background-color: red;
     margin: 10px;
     flex: 1 1 100px;
     display: flex;
@@ -40,23 +77,40 @@ aside {
 }
 
 aside>div{
-    background-color: #fafafa;
-    margin: 10px;
+   margin: 10px;
 }
 
-.filtro{
+.encabezado-filtros{
     display: flex;
     justify-content: space-between;
+   
+}
+h2{
+    font-weight: 600;
+    margin-top: 20px;
 }
 
 .limpiar{
     border:none;
+    margin-top: 20px;
 }
+
+h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.filtros label input {
+    margin-right: 5px;
+}
+
 .categorias{
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    padding: 5px;
+    
 }
 
 .puntaje{
@@ -64,20 +118,16 @@ aside>div{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    padding: 5px;
 }
 
-
-.far{
-    color: yellow;
-}
-
+/*ESTILO DE LOS ICONOS DE ESTRELLA PARA PUNTAJES EN GENERAL*/
 .fa-star{
-  color: yellow;
+  color: orange;
 }
 
-
+/*SECCIÓN CONTENEDORA DE ENCABEZADO-TARJETAS Y TARJETAS DE PRODUCTOS*/
 .seccion-tarjetas{
-    background-color:yellow;
     margin: 10px;
 
     display: flex;
@@ -86,52 +136,106 @@ aside>div{
     flex: 1 1 800px;
 }
 
+/*ENCABEZADO DE LA SECCIÓN DE PRODUCTOS*/
 .encabezado-tarjetas {
-    background-color:grey;
-    margin: 10px;
-    display: flex;
-    justify-content: space-between;
+   background-color: #fafafa;
+   height: 60px;
+   font-size: 14px;
+   margin: 10px;
+   padding: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
+
+/*DIV CONTENEDOR DE BOTONES DE CAMBIO GRILLA-LISTA DENTRO DEL ENCABEZADO DE TARJETAS*/
 .ver-como{
     display: flex;
+    padding: 10px;
+    align-items: center;
 }
 
 .boton-grilla{
     border:none;
+    font-size: 20px;
+    margin: 5px;
+   
 }
 .boton-lista{
     border:none;
+    font-size: 20px;
+    margin: 5px;
 }
 
+/*SECCIÓN DE TARJETAS*/
 .contenedor-tarjetas{
-    background-color:blue;
     margin: 10px;
-  
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20;
 
 }
 
 .tarjeta{
-    background-color: green;
+    background-color: #fafafa;
     margin:10px;
-    width: 250px;
+    width: 275px;
+    height: 480px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+   padding: 30px;
+   
+    text-align: center;
     
 }
 
+/*DENTRO DE TARJETA*/
 .imagen-producto{
     background-color: orange;
     margin: 10px;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }
 
+.contenido-producto{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-compra{
+  width: 200px;
+  height: 40px;
+  border: none;
+  background-color: whitesmoke;
+}
+
+.nombre-producto{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.precio-producto{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.puntaje-producto{
+    display: flex;
+}
+
+
+
+/*FOOTER*/
 footer{
     height: 100px;
     display: flex;
