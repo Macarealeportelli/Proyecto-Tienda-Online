@@ -4,6 +4,7 @@
     margin:0;
     font-family: 'Montserrat', sans-serif;
     color: black;
+    
 }
 
 body{
@@ -43,7 +44,8 @@ nav{
 .banner { 
     width: 100%;
     height: 300px;
-    background-image: url(/imagenes/banner.jpg);
+    margin-top: 20px;
+    background-image: url(imagenes/banner.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -99,6 +101,10 @@ h3{
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+/*POSICIONAMIENTO DE LUPA EN INPUT DE BUSQUEDA*/
+
+
 
 .filtros label input {
     margin-right: 5px;
@@ -196,10 +202,15 @@ h3{
 
 /*DENTRO DE TARJETA*/
 .imagen-producto{
-    background-color: orange;
+    /* background-color: orange; */
     margin: 10px;
-    width: 250px;
     height: 250px;
+    width: 250px;
+ 
+}
+.imagen-producto>img{
+    width: 250px;
+    
 }
 
 .contenido-producto{
