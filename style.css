@@ -222,6 +222,7 @@ h3{
     align-items: center;
    
     padding: 30px;
+    
    
         
 }
@@ -242,8 +243,14 @@ h3{
     margin: 10px;
     height: 250px;
     width: 250px;
- 
+    overflow: hidden;
 }
+
+/*Animación del producto cuando hace hover*/
+.imagen-producto:hover{
+    transform: scale(1.2);
+}
+
 .imagen-producto>img{
     width: 250px;
 }
@@ -290,6 +297,13 @@ h3{
     display: none;
 }
 
+.no-scroll{
+    overflow: hidden;
+}
+
+
+
+
 
 /*FOOTER*/
 footer{
@@ -297,6 +311,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: whitesmoke;
 }
 
 .fa-heart{
