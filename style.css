@@ -169,6 +169,53 @@ h3{
   color: orange;
 }
 
+/*SECCION CONTENEDORA DEL OVERLAY Y EL MUENU CARRITO*/
+
+.overlay{
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.menu-carrito{
+
+    width: 400px;
+    height: 100vh;
+    background-color: whitesmoke;
+    top: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+
+}
+
+.encabezado-menu{
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado-menu>h2{
+    margin-top: 0;
+}
+
+.encabezado-menu>button{
+    border: none;
+    background-color: whitesmoke;
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+
+
 /*SECCIÓN CONTENEDORA DE ENCABEZADO-TARJETAS Y TARJETAS DE PRODUCTOS*/
 .seccion-tarjetas{
     margin: 10px;
