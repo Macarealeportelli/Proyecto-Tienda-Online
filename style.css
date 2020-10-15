@@ -222,10 +222,10 @@ h3{
     align-items: center;
    
     padding: 30px;
-    
-   
-        
+          
 }
+
+
 .grilla{
     height: 480px;
     justify-content: center;
@@ -292,6 +292,11 @@ h3{
     background-color: whitesmoke;
     margin-top: 20px;
   }
+
+  .boton-compra:hover{
+      background-color: rgb(163, 184, 204);
+  }
+
 
 .hidden{
     display: none;
