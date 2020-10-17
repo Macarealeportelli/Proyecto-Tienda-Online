@@ -296,6 +296,56 @@
 
     </section>
 
+    <!--SECCIÓN DEL MODAL DE FINALIZAR COMPRA-->
+    <section id="overlay2" class="overlay2">
+        <div class="modal-checkout">
+            <h2>Checkout</h2>
+            <div class="contenedor-general-datos-checkout">
+                <div class="container-chekout">
+                    <form action="" class="datos-comprador">
+                        <div class="contenedor-datos-personales">
+                            <h3>Datos Personales</h3>
+                            <div class="contenedor-inputs-datos">
+                                <label for="">
+                                    <p>Nombre y Apellido*</p>
+                                    <input type="text" placeholder="ej. Ada Lovelace">
+                                </label>
+                                <label for="">
+                                    <p> E-mail*</p>
+                                    <input type="text" placeholder="ej. adalovelace@gmail.com">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="opciones-de-pago">
+                            <h3>Opciones de Pago</h3>
+                            <label for=""><input type="radio" name="pago" id="efectivo" /> Efectivo/Débito </label>
+                            <label for=""><input type="radio" name="pago" id="tarjeta" /> Tarjeta de Crédito </label>
+                            <label for=""><input type="checkbox" name="envío" id="tiene-envio"> Necesito envío</label>
+                            <label for=""><input type="checkbox" name="descuento" id="tiene-descuento"> Tengo tarjeta de
+                                descuento</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="resumen">
+                    <h3>Resumen</h3>
+                    <div class="info-resumen">
+                        <p class="subtotal-checkout">Subtotal <span id="subtotal"> $</span></p>
+                        <p class="descuento-checkout">Descuento 10% <span id="descuento" class="descuento-checkout"> $</span></p>
+                        <p class="envio-checkout">Envío <span id="envio"> $300</span></p>
+                        <p class="recargo-checkout">Recargo <span id="recargo" class="recargo-checkout"> $</span></p>
+                        <h3 class="total-checkout">Total <span id="total"> $</span></h3>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer-checkout">
+                <button id="seguir-comprando" class="seguir-comprando">Seguir Comprando</button>
+                <button id="finalizar-compra" class="finalizar-compra">Finalizar Compra</button>
+            </footer>
+        </div>
+
+
+    </section>
 
     <!--SECCION PRINCIPAL-->
     <section class="principal">
@@ -689,7 +739,7 @@
     </section>
 
     <!--FOOTER-->
-    <footer>
+    <footer class="footer-general">
         <div class="logo-container"> <img src="imagenes/iso_blanco.svg" alt="logo ada">ADA SHOP</div>
         <p> - Gracias por visitarnos! <i class="fas fa-heart"></i></p>
 

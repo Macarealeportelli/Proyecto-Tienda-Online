@@ -215,8 +215,7 @@ h3{
     font-size: 30px;
 }
 
-
-
+/*Contenedor de los elementos dentro del carrito*/
 .contenido-del-carrito{
     position: relative;
     overflow: scroll;
@@ -295,7 +294,108 @@ h3{
     margin: 20px;
 }
 
+/*MODAL DEL CHECKOUT*/
+.overlay2{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+}
 
+.modal-checkout{
+    width: 100%;
+    max-width: 800px;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 40px;
+    top: 0;
+    overflow: auto;
+}
+
+.contenedor-general-datos-checkout{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-datos-personales{
+    width: 410px;
+    padding: 20px;
+}
+.contenedor-inputs-datos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+input[type=text] {
+    border: none;
+    border-bottom: 1px solid black;
+    height: 40px;
+    width: 100%;
+}
+.contenedor-inputs-datos>label{
+    margin-top:30px;
+}
+
+.opciones-de-pago{
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #e0e0e0;
+    padding: 20px;
+}
+ .resumen{
+     width: 260px;
+     background-color: #dedede;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     padding: 20px;
+     align-items: stretch;
+ }
+
+ .descuento-checkout{
+     color: green;
+ }
+
+ .recargo-checkout{
+     color: red;
+ }
+
+ .footer-checkout{
+     margin-top: 40px;
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ .footer-checkout>button{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+ }
+
+ .seguir-comprando{
+     background-color: white;
+ }
+ .seguir-comprando:hover{
+     background-color: #dedede;
+ }
+.finalizar-compra{
+    background-color: green;
+    color: white;
+}
+
+/*SECCIÓN PRINCIPAL*/
 /*SECCIÓN CONTENEDORA DE ENCABEZADO-TARJETAS Y TARJETAS DE PRODUCTOS*/
 .seccion-tarjetas{
     margin: 10px;
@@ -438,7 +538,7 @@ h3{
 
 
 /*FOOTER*/
-footer{
+.footer-general{
     height: 100px;
     display: flex;
     justify-content: center;
