@@ -129,8 +129,9 @@ h3{
 
 /*FILTRO DE BÚSQUEDA + POSICIONAMIENTO DE LUPA EN INPUT DE BUSQUEDA*/
 .search{
+    background-color: whitesmoke;
     position: relative;
-    height: 30px;
+    height: 20px;
     padding: 10px;
     border: none;
     border-bottom: 2px solid black;
@@ -138,8 +139,8 @@ h3{
 
 #lupita{
     position: absolute;
-    left: 180px;
-    top: 610px;
+    left: 200px;
+    top: 615px;
 }
 
 
@@ -251,8 +252,8 @@ h3{
     background-color: whitesmoke;
 }
 
-.fa-trash-alt{
-    color: red;
+.limpiar-del-carrito>fa-trash-alt{
+    color:red;
 }
 
 .precio-producto-carrito{
@@ -399,6 +400,39 @@ input[type=text] {
     background-color: green;
     color: white;
 }
+
+/*MODAL MENSAJE DE ABANDONAR CARRITO*/
+.modal-mensaje{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje>h1{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+.accion-mensaje{
+    margin-top: 20px;
+}
+.accion-mensaje>button{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+.vaciar{
+    background-color: red;
+    color: #ffffff;
+}
+
 
 /*SECCIÓN PRINCIPAL*/
 /*SECCIÓN CONTENEDORA DE ENCABEZADO-TARJETAS Y TARJETAS DE PRODUCTOS*/

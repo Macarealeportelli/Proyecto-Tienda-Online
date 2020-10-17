@@ -34,7 +34,7 @@
 
     <!--SECCIÓN CONTENEDORA DEL MENU CARRITO-->
 
-    <section id="overlay " class="overlay hidden">
+    <section id="overlay-carrito " class="overlay hidden">
         <div id="menu-carrito " class="menu-carrito ">
             <div class="encabezado-menu">
                 <h2>Carrito</h2>
@@ -297,7 +297,7 @@
     </section>
 
     <!--SECCIÓN DEL MODAL DE FINALIZAR COMPRA-->
-    <section id="overlay2" class="overlay2 ">
+    <section id="overlay-checkout" class="overlay2 hidden">
         <div class="modal-checkout">
             <h2>Checkout</h2>
             <div class="contenedor-general-datos-checkout">
@@ -330,7 +330,8 @@
                     <h3>Resumen</h3>
                     <div class="info-resumen">
                         <p class="subtotal-checkout">Subtotal <span id="subtotal"> $</span></p>
-                        <p class="descuento-checkout">Descuento 10% <span id="descuento" class="descuento-checkout"> $</span></p>
+                        <p class="descuento-checkout">Descuento 10% <span id="descuento" class="descuento-checkout">
+                                $</span></p>
                         <p class="envio-checkout">Envío <span id="envio"> $300</span></p>
                         <p class="recargo-checkout">Recargo <span id="recargo" class="recargo-checkout"> $</span></p>
                         <h2 class="total-checkout">Total <span id="total"> $</span></h3>
@@ -344,6 +345,21 @@
             </footer>
         </div>
 
+
+    </section>
+
+    <!--SECCIÓN DEL MODAL CON MENSAJE DE ABANDONO DE CARRITO-->
+    <section id="overlay-mensaje" class="overlay2 hidden">
+        <div class="modal-mensaje">
+            <div class="mensaje">
+                <h1>Estás por vaciar el carrito, ¿quieres continuar?</h1>
+            </div>
+            <div class="accion-mensaje">
+                <button id="cancelar" class="seguir-comprando">Cancelar</button>
+                <button id="vaciar" class="vaciar">Vaciar</button>
+            </div>
+
+        </div>
 
     </section>
 
