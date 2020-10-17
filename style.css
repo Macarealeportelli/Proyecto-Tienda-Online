@@ -225,7 +225,7 @@ h3{
 .producto-carrito{
     display: flex;
     background-color: whitesmoke;
-    border-bottom: 1x solid grey;
+    border-top: 1px solid #e0e0e0;
     padding: 10px;
 }
 
@@ -361,6 +361,11 @@ input[type=text] {
      padding: 20px;
      align-items: stretch;
  }
+
+.info-resumen>p,h2{
+    display: flex;
+    justify-content: space-between;
+}
 
  .descuento-checkout{
      color: green;
