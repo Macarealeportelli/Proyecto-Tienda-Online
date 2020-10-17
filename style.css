@@ -172,26 +172,27 @@ h3{
 /*SECCION CONTENEDORA DEL OVERLAY Y EL MUENU CARRITO*/
 
 .overlay{
-    width: 100vh;
+    width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 0;
     bottom: 0;
+    z-index: 3;
 }
 
 .menu-carrito{
-
     width: 400px;
     height: 100vh;
     background-color: whitesmoke;
+    border-left: 1px solid #dedede;
     top: 0;
     right: 0;
     position: fixed;
     display: flex;
     flex-direction: column;
     padding: 20px;
-
+    z-index: 4;
 
 }
 
@@ -207,13 +208,92 @@ h3{
     margin-top: 0;
 }
 
-.encabezado-menu>button{
+#cerrar-menu{
     border: none;
     background-color: whitesmoke;
     margin-top: 5px;
     font-size: 30px;
 }
 
+
+
+.contenido-del-carrito{
+    position: relative;
+    overflow: scroll;
+    height: 300px;
+}
+/*Tarjetas de Productos dentro del carrito*/
+.producto-carrito{
+    display: flex;
+    background-color: whitesmoke;
+    border-bottom: 1x solid grey;
+    padding: 10px;
+}
+
+.imagen-en-carrito{
+    width: 110px;
+    margin-right: 15px;
+}
+
+.info-producto-carrito{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre-producto-carrito{
+    margin-right: 70px;
+}
+
+.limpiar-del-carrito{
+    border: none;
+    font-size: 20px;
+   
+    background-color: whitesmoke;
+}
+
+.fa-trash-alt{
+    color: red;
+}
+
+.precio-producto-carrito{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cantidad-comprada{
+    width: 40px;
+}
+
+/*Botones de accion en carrito*/
+
+.botones-de-accion{
+    display: flex;
+    flex-direction: column;
+}
+
+.comprar-carrito{
+    height: 40px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    margin: 10px;
+   
+}
+
+.vaciar-carrito{
+    height: 40px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    border: 1px solid red;
+    color: red;
+    margin: 10px;
+}
+
+.subtotal{
+    margin: 20px;
+}
 
 
 /*SECCIÓN CONTENEDORA DE ENCABEZADO-TARJETAS Y TARJETAS DE PRODUCTOS*/

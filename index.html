@@ -34,18 +34,267 @@
 
     <!--SECCIÓN CONTENEDORA DEL MENU CARRITO-->
 
-    <section id="overlay " class="overlay hidden">
-        <div id="menu-carrito" class="menu-carrito">
+    <section id="overlay " class="overlay ">
+        <div id="menu-carrito " class="menu-carrito ">
             <div class="encabezado-menu">
                 <h2>Carrito</h2>
                 <button id="cerrar-menu"><i class="far fa-window-close"></i></button>
             </div>
-            <p>No tienes ningun producto en tu carrito. ¡Agrega algunos!</p>
+            <p id="leyenda-sin-productos-agragados">No tienes ningun producto en tu carrito. ¡Agrega algunos!</p>
+            <p id="leyenda-cantidad-productos-agragados" class=" hidden"> 1 producto(s) agregado(s)</p>
+
+            <div class="contenido-del-carrito hidden">
+                <!--Tarjetas de productos dentro del carrito-->
+                <article id="producto-carrito" class="producto-carrito hidden">
+                    <div>
+                        <img class="imagen-en-carrito" src="imagenes/xiaomi.jpg" alt="celular xiaomi">
+                    </div>
+                    <div>
+                        <div class="info-producto-carrito">
+                            <h3 class="nombre-producto-carrito">Celular Xiaomi</h3>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
+                                    class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="precio-producto-carrito">
+                            <label for="">
+                                <input type="number" id="cantidad-comprada" class="cantidad-comprada" min="0"
+                                    value="1" />
+                                <p>unidades</p>
+                            </label>
+                            <p>x $22499</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="producto-carrito" class="producto-carrito hidden">
+                    <div>
+                        <img class="imagen-en-carrito" src="imagenes/ps4.jpg" alt="playstation 4">
+                    </div>
+                    <div>
+                        <div class="info-producto-carrito">
+                            <h3 class="nombre-producto-carrito">PlayStation 4</h3>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
+                                    class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="precio-producto-carrito">
+                            <label for="">
+                                <input type="number" id="cantidad-comprada" class="cantidad-comprada" min="0"
+                                    value="1" />
+                                <p>unidades</p>
+                            </label>
+                            <p>x $59999</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="producto-carrito" class="producto-carrito hidden">
+                    <div>
+                        <img class="imagen-en-carrito" src="imagenes/nikon.jpg" alt="cámara nikon">
+                    </div>
+                    <div>
+                        <div class="info-producto-carrito">
+                            <h3 class="nombre-producto-carrito">Cámara Nikon</h3>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
+                                    class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="precio-producto-carrito">
+                            <label for="">
+                                <input type="number" id="cantidad-comprada" class="cantidad-comprada" min="0"
+                                    value="1" />
+                                <p>unidades</p>
+                            </label>
+                            <p>x $54999</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="producto-carrito" class="producto-carrito hidden">
+                    <div>
+                        <img class="imagen-en-carrito" src="imagenes/sony.jpg" alt="headphones sony">
+                    </div>
+                    <div>
+                        <div class="info-producto-carrito">
+                            <h3 class="nombre-producto-carrito">Headphones Sony</h3>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
+                                    class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="precio-producto-carrito">
+                            <label for="">
+                                <input type="number" id="cantidad-comprada" class="cantidad-comprada" min="0"
+                                    value="1" />
+                                <p>unidades</p>
+                            </label>
+                            <p>x $24999</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="producto-carrito" class="producto-carrito hidden">
+                    <div>
+                        <img class="imagen-en-carrito" src="imagenes/nintendo.jpg" alt="nintendo switch">
+                    </div>
+                    <div>
+                        <div class="info-producto-carrito">
+                            <h3 class="nombre-producto-carrito">Ninendo Switch</h3>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
+                                    class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="precio-producto-carrito">
+                            <label for="">
+                                <input type="number" id="cantidad-comprada" class="cantidad-comprada" min="0"
+                                    value="1" />
+                                <p>unidades</p>
+                            </label>
+                            <p>x $46999</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="producto-carrito" class="producto-carrito hidden">
+                    <div>
+                        <img class="imagen-en-carrito" src="imagenes/asus.jpg" alt="notebook asus">
+                    </div>
+                    <div>
+                        <div class="info-producto-carrito">
+                            <h3 class="nombre-producto-carrito">Notebook Asus</h3>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
+                                    class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="precio-producto-carrito">
+                            <label for="">
+                                <input type="number" id="cantidad-comprada" class="cantidad-comprada" min="0"
+                                    value="1" />
+                                <p>unidades</p>
+                            </label>
+                            <p>x $32999</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="producto-carrito" class="producto-carrito hidden">
+                    <div>
+                        <img class="imagen-en-carrito" src="imagenes/msi.jpg" alt="notebook msi">
+                    </div>
+                    <div>
+                        <div class="info-producto-carrito">
+                            <h3 class="nombre-producto-carrito">Notebook MSI</h3>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
+                                    class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="precio-producto-carrito">
+                            <label for="">
+                                <input type="number" id="cantidad-comprada" class="cantidad-comprada" min="0"
+                                    value="1" />
+                                <p>unidades</p>
+                            </label>
+                            <p>x $37999</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="producto-carrito" class="producto-carrito hidden">
+                    <div>
+                        <img class="imagen-en-carrito" src="imagenes/philips.jpg" alt="headphones philips">
+                    </div>
+                    <div>
+                        <div class="info-producto-carrito">
+                            <h3 class="nombre-producto-carrito">Headphones Philips</h3>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
+                                    class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="precio-producto-carrito">
+                            <label for="">
+                                <input type="number" id="cantidad-comprada" class="cantidad-comprada" min="0"
+                                    value="1" />
+                                <p>unidades</p>
+                            </label>
+                            <p>x $11999</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="producto-carrito" class="producto-carrito hidden">
+                    <div>
+                        <img class="imagen-en-carrito" src="imagenes/macbook.jpg" alt="macbook">
+                    </div>
+                    <div>
+                        <div class="info-producto-carrito">
+                            <h3 class="nombre-producto-carrito">Macbook</h3>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
+                                    class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="precio-producto-carrito">
+                            <label for="">
+                                <input type="number" id="cantidad-comprada" class="cantidad-comprada" min="0"
+                                    value="1" />
+                                <p>unidades</p>
+                            </label>
+                            <p>x $119999</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="producto-carrito" class="producto-carrito hidden">
+                    <div>
+                        <img class="imagen-en-carrito" src="imagenes/iphone.jpg" alt="iphone">
+                    </div>
+                    <div>
+                        <div class="info-producto-carrito">
+                            <h3 class="nombre-producto-carrito">Iphone</h3>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
+                                    class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="precio-producto-carrito">
+                            <label for="">
+                                <input type="number" id="cantidad-comprada" class="cantidad-comprada" min="0"
+                                    value="1" />
+                                <p>unidades</p>
+                            </label>
+                            <p>x $79999</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="producto-carrito" class="producto-carrito hidden">
+                    <div>
+                        <img class="imagen-en-carrito" src="imagenes/xbox.jpg" alt="xboxone">
+                    </div>
+                    <div>
+                        <div class="info-producto-carrito">
+                            <h3 class="nombre-producto-carrito">XboxOne</h3>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
+                                    class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="precio-producto-carrito">
+                            <label for="">
+                                <input type="number" id="cantidad-comprada" class="cantidad-comprada" min="0"
+                                    value="1" />
+                                <p>unidades</p>
+                            </label>
+                            <p>x $69999</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="producto-carrito" class="producto-carrito hidden">
+                    <div>
+                        <img class="imagen-en-carrito" src="imagenes/gamer.jpg" alt="mouse gamer">
+                    </div>
+                    <div>
+                        <div class="info-producto-carrito">
+                            <h3 class="nombre-producto-carrito">Mouse Gamer</h3>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
+                                    class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="precio-producto-carrito">
+                            <label for="">
+                                <input type="number" id="cantidad-comprada" class="cantidad-comprada" min="0"
+                                    value="1" />
+                                <p>unidades</p>
+                            </label>
+                            <p>x $4999</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="botones-de-accion hidden ">
+                <p id="subtotal" class="subtotal hidden">Subtotal= $ </p>
+
+                <button id="comprar-carrito" class="comprar-carrito">COMPRAR</button>
+                <button id="vaciar-carrito" class="vaciar-carrito">VACIAR</button>
+            </div>
         </div>
+
     </section>
-
-
-
 
 
     <!--SECCION PRINCIPAL-->
