@@ -19,7 +19,7 @@
                 <img src="imagenes/iso_blanco.svg" role="logo ada">
                 <p>ADA SHOP</p>
             </div>
-            <button class="boton-carrito">
+            <button id="carrito" class="boton-carrito">
                 <i class="fas fa-shopping-cart"></i>
                 Carrito (0 items)
             </button>
@@ -34,8 +34,8 @@
 
     <!--SECCIÓN CONTENEDORA DEL MENU CARRITO-->
 
-    <section id="overlay-carrito " class="overlay hidden">
-        <div id="menu-carrito " class="menu-carrito ">
+    <section id="overlay-carrito" class="overlay hidden">
+        <div id="menu-carrito" class="menu-carrito ">
             <div class="encabezado-menu">
                 <h2>Carrito</h2>
                 <button id="cerrar-menu"><i class="far fa-window-close"></i></button>
@@ -455,8 +455,8 @@
                 <p>Mostrando 12 productos de (12)</p>
                 <div class="ver-como">
                     <p>Ver como </p>
-                    <button class="boton-grilla disposicion"> <i class="fas fa-th"></i></button>
-                    <button class="boton-lista disposicion"> <i class="fas fa-list"></i></button>
+                    <button id="boton-grilla" class="disposicion"> <i class="fas fa-th"></i></button>
+                    <button id="boton-lista" class="disposicion"> <i class="fas fa-list"></i></button>
                 </div>
             </div>
 
@@ -470,7 +470,7 @@
                     <div class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Celular Xiaomi</h3>
                         <p class="precio-producto">$22499</p>
-                        <p class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -493,7 +493,7 @@
                     <div class="contenido-producto-grilla">
                         <h3 class="nombre-producto">PlayStation 4</h3>
                         <p class="precio-producto">$59999</p>
-                        <p class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -517,7 +517,7 @@
                     <div class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Cámara Nikon</h3>
                         <p class="precio-producto">$54999</p>
-                        <p class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -541,7 +541,7 @@
                     <div class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Headphones Sony</h3>
                         <p class="precio-producto">$24999</p>
-                        <p class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -565,7 +565,7 @@
                     <div class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Nintendo Switch</h3>
                         <p class="precio-producto">$46999</p>
-                        <p class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -589,7 +589,7 @@
                     <div class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Notebook ASUS</h3>
                         <p class="precio-producto">$32999</p>
-                        <p class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -613,7 +613,7 @@
                     <div class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Notebook MSI</h3>
                         <p class="precio-producto">$37999</p>
-                        <p class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -637,7 +637,7 @@
                     <div class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Headphones Philips</h3>
                         <p class="precio-producto">$11999</p>
-                        <p class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -661,7 +661,7 @@
                     <div class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Macbook</h3>
                         <p class="precio-producto">$119999</p>
-                        <p class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -685,7 +685,7 @@
                     <div class="contenido-producto-grilla">
                         <h3 class="nombre-producto">IPhone</h3>
                         <p class="precio-producto">$79999</p>
-                        <p class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -709,7 +709,7 @@
                     <div class="contenido-producto-grilla">
                         <h3 class="nombre-producto">XboxOne</h3>
                         <p class="precio-producto">$69999</p>
-                        <p class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -732,7 +732,7 @@
                     <div class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Mouse Gamer</h3>
                         <p class="precio-producto">$4999</p>
-                        <p class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
