@@ -219,27 +219,71 @@ botonLimpiarFiltros.onclick = () => {
     }
 }
 
+// //CONTADOR DE PRODUCTOS MOSTRADOS
+// const mostrarProductos = document.getElementById("mostrando-productos")
+// const contadorDeProductosEscondidos = 0
 
+// const tarjetasEscondidas =()=>{
+//     for (let card of cards){
+//         if (card.classList === hidden){
+//             contadorDeProductosEscondidos = contadorDeProductosEscondidos + 1
+//         }
+//     }
+//     return contadorDeProductosEscondidos
+// }
 
-
-
-
+// const resultadoDeProductosMostrados=()=>{
+//     const resultado = 12 - tarjetasEscondidas()
+//     mostrarProductos.textContent = resultado
+// }
 
 
 //APARICIÓN DE MODAL DEL CARRITO
 const abrirCarrito = document.getElementById("carrito");
 const cerrarCarrito = document.getElementById("cerrar-menu");
 const menu = document.getElementById("overlay-carrito");
-const body = document.querySelector("body")
+const body = document.querySelector("body");
 
 //abrimos carrito y quitamos scroll al body
 abrirCarrito.onclick = () => {
     menu.classList.remove("hidden");
-    body.classList.add("no-scroll")
+    body.classList.add("no-scroll");
 }
 
 //cerramos carrito y devolvemos el scroll al body
 cerrarCarrito.onclick = () => {
     menu.classList.add("hidden");
-    body.classList.remove("no-scroll")
+    body.classList.remove("no-scroll");
 }
+
+//ACCIONES DE LOS BOTONES DEL CARRITO
+
+//BOTON VACIAR
+const vaciarCarrito = document.getElementById("vaciar-carrito");
+const mensajeAbandonarCarrito = document.getElementById("overlay-mensaje");
+
+vaciarCarrito.onclick=()=>{
+    mensajeAbandonarCarrito.classList.remove('hidden');
+}
+
+//Accionar de Botones dentro del mensaje de Abandonar carrito
+//cancelar ---> vuelve al carrito con los productos
+const cancelarAbandonarCarrito = document.getElementById("cancelar");
+
+cancelarAbandonarCarrito.onclick=()=>{
+    mensajeAbandonarCarrito.classList.add('hidden');
+}
+
+//vaciar --->limpia el carrito de productos
+const confirmarVaciarCarrito = document.getElementById('vaciar');
+const mostrarProductosCarrito = document.getElementById('contenido-del-carrito');
+const accionesCarrito = document.getElementById('acciones-carrito');
+
+confirmarVaciarCarrito.onclick=()=>{
+    mostrarProductosCarrito.classList.add('hidden');
+    accionesCarrito.classList.add('hidden');
+    mensajeAbandonarCarrito.classList.add('hidden')
+}
+
+
+//CHECKOUT

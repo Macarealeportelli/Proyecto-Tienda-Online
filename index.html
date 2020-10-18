@@ -43,9 +43,9 @@
             <p id="leyenda-sin-productos-agragados">No tienes ningun producto en tu carrito. ¡Agrega algunos!</p>
             <p id="leyenda-cantidad-productos-agragados" class=" hidden"> 1 producto(s) agregado(s)</p>
 
-            <div class="contenido-del-carrito hidden">
+            <div id="contenido-del-carrito" class="contenido-del-carrito ">
                 <!--Tarjetas de productos dentro del carrito-->
-                <article id="producto-carrito" class="producto-carrito hidden">
+                <article id="producto-carrito" class="producto-carrito ">
                     <div>
                         <img class="imagen-en-carrito" src="imagenes/xiaomi.jpg" alt="celular xiaomi">
                     </div>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                 </article>
-                <article id="producto-carrito" class="producto-carrito hidden">
+                <article id="producto-carrito" class="producto-carrito ">
                     <div>
                         <img class="imagen-en-carrito" src="imagenes/ps4.jpg" alt="playstation 4">
                     </div>
@@ -286,8 +286,8 @@
                     </div>
                 </article>
             </div>
-            <div class="botones-de-accion hidden ">
-                <p id="subtotal" class="subtotal hidden">Subtotal= $ </p>
+            <div id="acciones-carrito" class="botones-de-accion  ">
+                <p id="subtotal" class="subtotal">Subtotal= $ 82498 </p>
 
                 <button id="comprar-carrito" class="comprar-carrito">COMPRAR</button>
                 <button id="vaciar-carrito" class="vaciar-carrito">VACIAR</button>
@@ -452,7 +452,7 @@
         <section class="seccion-tarjetas">
             <!--ENCABEZADO DE LA SECCIÓN TARJETAS-->
             <div class="encabezado-tarjetas">
-                <p id="mostrando-productos">Mostrando 12 productos de (12)</p>
+                <p >Mostrando <span id="mostrando-productos">12</span> productos de (12)</p>
                 <div class="ver-como">
                     <p>Ver como </p>
                     <button id="boton-grilla" class="disposicion"> <i class="fas fa-th"></i></button>
