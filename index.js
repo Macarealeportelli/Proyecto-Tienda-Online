@@ -282,8 +282,27 @@ const accionesCarrito = document.getElementById('acciones-carrito');
 confirmarVaciarCarrito.onclick=()=>{
     mostrarProductosCarrito.classList.add('hidden');
     accionesCarrito.classList.add('hidden');
-    mensajeAbandonarCarrito.classList.add('hidden')
+    mensajeAbandonarCarrito.classList.add('hidden');
+}
+
+//BOTON COMPRAR ---> ABRE EL MODAL DEL CHECKOUT
+const comprarCarrito = document.getElementById('comprar-carrito');
+const checkout = document.getElementById('overlay-checkout');
+
+comprarCarrito.onclick=()=>{
+    checkout.classList.remove('hidden');
+}
+
+//CHECKOUT
+
+//Boton Seguir Comprando ---> cierra el checkout
+const seguirComprando = document.getElementById('seguir-comprando');
+
+seguirComprando.onclick=()=>{
+    checkout.classList.add('hidden');
 }
 
 
-//CHECKOUT
+
+//Boton Finalizar compra --->recuerda al usuario rellenar los inputs de texto
+//--envia el formulario y cierra el carrito vacio
