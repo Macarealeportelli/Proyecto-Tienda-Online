@@ -377,26 +377,26 @@
                 <div>
                     <form action="">
                         <div>
-                            <div>
+                            <label  for="filtro-nombre">
                                 <h3>BÚSQUEDA</h3>
-                                <input type="text" class="search" placeholder="Buscar Productos">
+                                <input type="text" id="filtro-nombre" class="search" placeholder="Buscar Productos">
                             </div>
                             <i class="fas fa-search" id="lupita"></i>
                         </div>
                         <label for="categoria" class="categorias">
                             <h3>CATEGORÍA</h3>
-                            <div> <input type="checkbox" id="categoria"> NOTEBOOKS</div>
-                            <div> <input type="checkbox" id="categoria"> CONSOLAS</div>
-                            <div> <input type="checkbox" id="categoria"> CÁMARAS</div>
-                            <div> <input type="checkbox" id="categoria"> CELULARES</div>
-                            <div> <input type="checkbox" id="categoria"> ACCESORIOS</div>
+                            <div> <input type="checkbox" id="categoria" name="categoria" value="notebooks"> NOTEBOOKS</div>
+                            <div> <input type="checkbox" id="categoria" name="categoria" value="consolas"> CONSOLAS</div>
+                            <div> <input type="checkbox" id="categoria" name="categoria" value="camaras"> CÁMARAS</div>
+                            <div> <input type="checkbox" id="categoria" name="categoria" value="celulares"> CELULARES</div>
+                            <div> <input type="checkbox" id="categoria" name="categoria" value="accesorios"> ACCESORIOS</div>
                         </label>
 
 
                         <label for="puntaje" class="puntaje">
                             <h3>PUNTAJE</h3>
                             <div>
-                                <input type="checkbox" name="five-stars" id="puntaje">
+                                <input type="checkbox" id="puntaje" name="rating" value="5">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -405,7 +405,7 @@
                                 (5)
                             </div>
                             <div>
-                                <input type="checkbox" name="four-stars" id="puntaje">
+                                <input type="checkbox" id="puntaje" name="rating" value="4">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -414,7 +414,7 @@
                                 (4)
                             </div>
                             <div>
-                                <input type="checkbox" name="three-stars" id="puntaje">
+                                <input type="checkbox" id="puntaje" name="rating" value="3">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -423,7 +423,7 @@
                                 (3)
                             </div>
                             <div>
-                                <input type="checkbox" name="two-stars" id="puntaje">
+                                <input type="checkbox" id="puntaje" name="rating" value="2">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="far fa-star"></i>
@@ -432,7 +432,7 @@
                                 (2)
                             </div>
                             <div>
-                                <input type="checkbox" name="one-star" id="puntaje">
+                                <input type="checkbox" id="puntaje" name="rating" value="1">
                                 <i class="fas fa-star"></i>
                                 <i class="far fa-star"></i>
                                 <i class="far fa-star"></i>
@@ -470,7 +470,8 @@
                     <div id="contenido" class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Celular Xiaomi</h3>
                         <p class="precio-producto">$22499</p>
-                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -493,7 +494,8 @@
                     <div id="contenido" class="contenido-producto-grilla">
                         <h3 class="nombre-producto">PlayStation 4</h3>
                         <p class="precio-producto">$59999</p>
-                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -517,7 +519,8 @@
                     <div id="contenido" class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Cámara Nikon</h3>
                         <p class="precio-producto">$54999</p>
-                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -541,7 +544,8 @@
                     <div id="contenido" class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Headphones Sony</h3>
                         <p class="precio-producto">$24999</p>
-                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -565,7 +569,8 @@
                     <div id="contenido" class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Nintendo Switch</h3>
                         <p class="precio-producto">$46999</p>
-                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -589,7 +594,8 @@
                     <div id="contenido" class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Notebook ASUS</h3>
                         <p class="precio-producto">$32999</p>
-                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -613,7 +619,8 @@
                     <div id="contenido" class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Notebook MSI</h3>
                         <p class="precio-producto">$37999</p>
-                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -637,7 +644,8 @@
                     <div id="contenido" class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Headphones Philips</h3>
                         <p class="precio-producto">$11999</p>
-                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -661,7 +669,8 @@
                     <div id="contenido" class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Macbook</h3>
                         <p class="precio-producto">$119999</p>
-                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -685,7 +694,8 @@
                     <div id="contenido" class="contenido-producto-grilla">
                         <h3 class="nombre-producto">IPhone</h3>
                         <p class="precio-producto">$79999</p>
-                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -709,7 +719,8 @@
                     <div id="contenido" class="contenido-producto-grilla">
                         <h3 class="nombre-producto">XboxOne</h3>
                         <p class="precio-producto">$69999</p>
-                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
@@ -732,7 +743,8 @@
                     <div id="contenido" class="contenido-producto-grilla">
                         <h3 class="nombre-producto">Mouse Gamer</h3>
                         <p class="precio-producto">$4999</p>
-                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p id="descripcion-producto" class="descripcion-producto hidden">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
                         <div class="puntaje-producto">
