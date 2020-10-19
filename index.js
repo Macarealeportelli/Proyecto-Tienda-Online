@@ -285,15 +285,37 @@ confirmarVaciarCarrito.onclick=()=>{
     mensajeAbandonarCarrito.classList.add('hidden');
 }
 
-//BOTON COMPRAR ---> ABRE EL MODAL DEL CHECKOUT
+//CHECKOUT
+
 const comprarCarrito = document.getElementById('comprar-carrito');
 const checkout = document.getElementById('overlay-checkout');
 
+const pagaEnEfectivo = document.getElementById('efectivo-debito');
+const pagaConTarjeta = document.getElementById('tarjeta');
+const tieneEnvio = document.getElementById('tiene-envio');
+const tieneDescuento = document.getElementById('tiene-descuento');
+const descuentoCheckout = document.getElementById('descuento');
+const recargoCheckout = document.getElementById('recargo');
+const envioCheckout = document.getElementById('envio')
+const totalCheckout = document.getElementById('total');
+const subtotalProductos = document.getElementById('subtotal');
+
+const parrafoRecargo = document.getElementById('parrafo-recargo');
+const parrafoDescuento = document.getElementById('parrafo-descuento');
+const parrafoEnvio = document.getElementById('parrafo-envio');
+
+const gastoDeEnvio = 300;
+
+const subtotal= 82498
+
+//BOTON COMPRAR EN CARRITO ---> ABRE EL MODAL DEL CHECKOUT
 comprarCarrito.onclick=()=>{
     checkout.classList.remove('hidden');
+    totalCheckout.textContent = "$" + subtotal;
+    parrafoDescuento.classList.add('hidden')
+    parrafoRecargo.classList.add('hidden')
+    parrafoEnvio.classList.add('hidden')
 }
-
-//CHECKOUT
 
 //Boton Seguir Comprando ---> cierra el checkout
 const seguirComprando = document.getElementById('seguir-comprando');
@@ -301,6 +323,149 @@ const seguirComprando = document.getElementById('seguir-comprando');
 seguirComprando.onclick=()=>{
     checkout.classList.add('hidden');
 }
+
+//Cáclculos del checkout
+
+// pagaConTarjeta.onclick=()=>{
+//     const recargo = subtotal* 0.1
+//     recargoCheckout.textContent = "$" + recargo.toFixed(2)
+//     parrafoRecargo.classList.remove('hidden')
+//     totalCheckout.textContent = "$" + (subtotal + recargo) 
+// }
+
+ //Funcion para cuando esta checkeado tarjeta de credito y las distintas variantes
+ pagaConTarjeta.onclick = () => {
+    if (estaChequeadoEnvio() && estaChequeadoDescuento()) {
+      subtotalProductos.textContent = "$" + subtotal
+      parrafoDescuento.classList.remove('hidden')
+      descuentoCheckout.textContent = "$" + obtenerDescuento(subtotal)
+      parrafoEnvio.classList.remove('hidden')
+      envioCheckout.textContent = "$" + gastoDeEnvio
+      parrafoRecargo.classList.remove('hidden')
+      recargoCheckout.textContent = "$" + obtenerRecargo(subtotal)
+      totalCheckout.textContent = subtotal - obtenerDescuento(subtotal) + gastoDeEnvio + obtenerRecargo(subtotal)
+    }
+    else if (estaChequeadoEnvio() && !estaChequeadoDescuento()) {
+      subtotalProductos.textContent = "$" + subtotal
+      descuentoCheckout.textContent = ""
+      parrafoEnvio.classList.remove('hidden')
+      envioCheckout.textContent = "$" + gastoDeEnvio
+      parrafoRecargo.classList.remove('hidden')
+      recargoCheckout.textContent = "$" + obtenerRecargo(subtotal)
+      totalCheckout.textContent = subtotal + gastoDeEnvio + obtenerRecargo(subtotal)
+    }
+    else if (!estaChequeadoEnvio() && estaChequeadoDescuento()) {
+      subtotalProductos.textContent = "$" + subtotal
+      parrafoDescuento.classList.remove('hidden')
+      descuentoCheckout.textContent = "$" + obtenerDescuento(subtotal)
+      envioCheckout.textContent = ""
+      parrafoRecargo.classList.remove('hidden')
+      recargoCheckout.textContent = "$" + obtenerRecargo(subtotal)
+      totalCheckout.textContent = subtotalProductos - obtenerDescuento(subtotal) + obtenerRecargo(subtotal)
+    }
+    else {
+      subtotalProductos.textContent = "$" + subtotal
+      descuentoCheckout.textContent = ""
+      envioCheckout.textContent = ""
+      parrafoRecargo.classList.remove('hidden')
+      recargoCheckout.textContent = "$" + obtenerRecargo(subtotal)
+      totalCheckout.textContent = subtotal + obtenerRecargo(subtotal)
+    }
+  }
+  
+  // Funcion para cuando esta checkeado en Efectivo/debito y las variantes
+   pagaEnEfectivo.onclick=()=>{
+      if (estaChequeadoEnvio() && estaChequeadoDescuento()) {
+        subtotalProductos.textContent = "$" + subtotal
+        parrafoDescuento.classList.remove('hidden')
+        descuentoCheckout.textContent = "$" + obtenerDescuento(subtotal)
+        parrafoEnvio.classList.remove('hidden')
+        envioCheckout.textContent = "$" + gastoDeEnvio
+        recargoCheckout.textContent =""
+        totalCheckout.textContent = subtotal - obtenerDescuento(subtotal) + gastoDeEnvio 
+      }
+      else if (estaChequeadoEnvio() && !estaChequeadoDescuento()) {
+        subtotalProductos.textContent = "$" + subtotal
+        descuentoCheckout.textContent = ""
+        parrafoEnvio.classList.remove('hidden')
+        envioCheckout.textContent = "$" + gastoDeEnvio
+        recargoCheckout.textContent = ""
+        totalCheckout.textContent =  subtotal + gastoDeEnvio 
+      }
+      else if (!estaChequeadoEnvio() && estaChequeadoDescuento()) {
+        subtotalProductos.textContent = "$" + subtotal
+        parrafoDescuento.classList.remove('hidden')
+        descuentoCheckout.textContent = "$" + obtenerDescuento(subtotal)
+        envioCheckout.textContent = ""
+        recargoCheckout.textContent = ""
+        totalCheckout.textContent =  subtotal - obtenerDescuento(subtotal)
+      }
+      else {
+        subtotalProductos.textContent = "$" + subtotal
+        descuentoCheckout.textContent = ""
+        envioCheckout.textContent = ""
+        recargoCheckout.textContent =""
+        totalCheckout.textContent = subtotal
+      }
+    }
+  
+  //funcion para cuando esta checkeado o descheckeado solo descuento
+  tieneDescuento.oninput = () => {
+    if (estaChequeadoDescuento()) {
+      descuentoCheckout.textContent = obtenerDescuento(subtotal)
+      totalCheckout.textContent = totalCheckout.textContent - obtenerDescuento(subtotal)
+    }
+    else {
+      descuentoCheckout.textContent = ""
+      totalCheckout.textContent = parseFloat(totalCheckout.textContent) + obtenerDescuento(subtotal)
+    }
+  };
+  
+  //Funcion para cuando solo esta checkeado o descheckeado envio
+  tieneEnvio.oninput = () => {
+    if (estaChequeadoEnvio()) {
+      envioCheckout.textContent = gastoDeEnvio;
+      totalCheckout.textContent = parseFloat(totalCheckout.textContent) + gastoDeEnvio
+    }
+    else {
+      envioCheckout.textContent = "";
+      totalCheckout.textContent = totalCheckout.textContent - gastoDeEnvio
+    }
+  };
+  
+  
+  const obtenerRecargo = (subtotal) => {
+    const recargo = subtotal * 0.1;
+    return recargo;
+  };
+  
+  const obtenerDescuento = (subtotal) => {
+    const descuento = subtotal * 0.1;
+    return descuento
+  };
+  
+  const obtenerTotalConEnvio = (subtotal) => {
+    return subtotal + gastoDeEnvio;
+  };
+  
+  
+  const estaChequeadoDescuento = () => {
+    if (tieneDescuento.checked) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+  
+  const estaChequeadoEnvio = () => {
+    if (tieneEnvio.checked) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+  
+
 
 
 

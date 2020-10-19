@@ -318,8 +318,11 @@
                         </div>
                         <div class="opciones-de-pago">
                             <h3>Opciones de Pago</h3>
-                            <label for=""><input type="radio" name="pago" id="efectivo" /> Efectivo/Débito </label>
-                            <label for=""><input type="radio" name="pago" id="tarjeta" /> Tarjeta de Crédito </label>
+                            <label for=""><input type="radio" name="pago" id="efectivo-debito" value="efectivo"
+                                    checked /> Efectivo/Débito
+                            </label>
+                            <label for=""><input type="radio" name="pago" id="tarjeta" value="tarjeta" /> Tarjeta de
+                                Crédito </label>
                             <label for=""><input type="checkbox" name="envío" id="tiene-envio"> Necesito envío</label>
                             <label for=""><input type="checkbox" name="descuento" id="tiene-descuento"> Tengo tarjeta de
                                 descuento</label>
@@ -329,12 +332,13 @@
                 <div class="resumen">
                     <h3>Resumen</h3>
                     <div class="info-resumen">
-                        <p class="subtotal-checkout">Subtotal <span id="subtotal"> $</span></p>
-                        <p class="descuento-checkout">Descuento 10% <span id="descuento" class="descuento-checkout">
-                                $</span></p>
-                        <p class="envio-checkout">Envío <span id="envio"> $300</span></p>
-                        <p class="recargo-checkout">Recargo <span id="recargo" class="recargo-checkout"> $</span></p>
-                        <h2 class="total-checkout">Total <span id="total"> $</span></h3>
+                        <p class="subtotal-checkout">Subtotal <span id="subtotal"> $82498</span></p>
+                        <p id="parrafo-descuento" class="descuento-checkout">Descuento 10% <span id="descuento"
+                                class="descuento-checkout"></span></p>
+                        <p id="parrafo-envio" class="envio-checkout">Envío <span id="envio"> </span></p>
+                        <p id="parrafo-recargo" class="recargo-checkout">Recargo <span id="recargo"
+                                class="recargo-checkout"> </span></p>
+                        <h2 class="total-checkout">Total <span id="total"> </span></h3>
                     </div>
                 </div>
             </div>
@@ -377,72 +381,72 @@
                 <div>
                     <form action="">
                         <div>
-                            <label  for="filtro-nombre">
+                            <label for="filtro-nombre">
                                 <h3>BÚSQUEDA</h3>
                                 <input type="text" id="filtro-nombre" class="search" placeholder="Buscar Productos">
-                            </div>
-                            <i class="fas fa-search" id="lupita"></i>
                         </div>
-                        <label for="categoria" class="categorias">
-                            <h3>CATEGORÍA</h3>
-                            <div> <input type="checkbox" id="categoria" name="categoria" value="notebooks"> NOTEBOOKS</div>
-                            <div> <input type="checkbox" id="categoria" name="categoria" value="consolas"> CONSOLAS</div>
-                            <div> <input type="checkbox" id="categoria" name="categoria" value="camaras"> CÁMARAS</div>
-                            <div> <input type="checkbox" id="categoria" name="categoria" value="celulares"> CELULARES</div>
-                            <div> <input type="checkbox" id="categoria" name="categoria" value="accesorios"> ACCESORIOS</div>
-                        </label>
+                        <i class="fas fa-search" id="lupita"></i>
+                </div>
+                <label for="categoria" class="categorias">
+                    <h3>CATEGORÍA</h3>
+                    <div> <input type="checkbox" id="categoria" name="categoria" value="notebooks"> NOTEBOOKS</div>
+                    <div> <input type="checkbox" id="categoria" name="categoria" value="consolas"> CONSOLAS</div>
+                    <div> <input type="checkbox" id="categoria" name="categoria" value="camaras"> CÁMARAS</div>
+                    <div> <input type="checkbox" id="categoria" name="categoria" value="celulares"> CELULARES</div>
+                    <div> <input type="checkbox" id="categoria" name="categoria" value="accesorios"> ACCESORIOS</div>
+                </label>
 
 
-                        <label for="puntaje" class="puntaje">
-                            <h3>PUNTAJE</h3>
-                            <div>
-                                <input type="checkbox" id="puntaje" name="rating" value="5">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                (5)
-                            </div>
-                            <div>
-                                <input type="checkbox" id="puntaje" name="rating" value="4">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                (4)
-                            </div>
-                            <div>
-                                <input type="checkbox" id="puntaje" name="rating" value="3">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                (3)
-                            </div>
-                            <div>
-                                <input type="checkbox" id="puntaje" name="rating" value="2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                (2)
-                            </div>
-                            <div>
-                                <input type="checkbox" id="puntaje" name="rating" value="1">
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                (1)
-                            </div>
-                        </label>
+                <label for="puntaje" class="puntaje">
+                    <h3>PUNTAJE</h3>
+                    <div>
+                        <input type="checkbox" id="puntaje" name="rating" value="5">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        (5)
+                    </div>
+                    <div>
+                        <input type="checkbox" id="puntaje" name="rating" value="4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        (4)
+                    </div>
+                    <div>
+                        <input type="checkbox" id="puntaje" name="rating" value="3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        (3)
+                    </div>
+                    <div>
+                        <input type="checkbox" id="puntaje" name="rating" value="2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        (2)
+                    </div>
+                    <div>
+                        <input type="checkbox" id="puntaje" name="rating" value="1">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        (1)
+                    </div>
+                </label>
 
-                    </form>
+                </form>
                 </div>
             </aside>
         </section>
@@ -452,7 +456,7 @@
         <section class="seccion-tarjetas">
             <!--ENCABEZADO DE LA SECCIÓN TARJETAS-->
             <div class="encabezado-tarjetas">
-                <p >Mostrando <span id="mostrando-productos">12</span> productos de (12)</p>
+                <p>Mostrando <span id="mostrando-productos">12</span> productos de (12)</p>
                 <div class="ver-como">
                     <p>Ver como </p>
                     <button id="boton-grilla" class="disposicion"> <i class="fas fa-th"></i></button>
