@@ -302,17 +302,17 @@
             <h2>Checkout</h2>
             <div class="contenedor-general-datos-checkout">
                 <div class="container-chekout">
-                    <form action="" class="datos-comprador">
+                    <form action="" id="formulario-datos" class="datos-comprador">
                         <div class="contenedor-datos-personales">
                             <h3>Datos Personales</h3>
                             <div class="contenedor-inputs-datos">
                                 <label for="">
                                     <p>Nombre y Apellido*</p>
-                                    <input type="text" placeholder="ej. Ada Lovelace">
+                                    <input id="input-nombre" type="text" placeholder="ej. Ada Lovelace" required">
                                 </label>
                                 <label for="">
                                     <p> E-mail*</p>
-                                    <input type="text" placeholder="ej. adalovelace@gmail.com">
+                                    <input id="input-mail" type="email" placeholder="ej. adalovelace@gmail.com" required>
                                 </label>
                             </div>
                         </div>
@@ -345,7 +345,7 @@
 
             <footer class="footer-checkout">
                 <button id="seguir-comprando" class="seguir-comprando">Seguir Comprando</button>
-                <button id="finalizar-compra" class="finalizar-compra">Finalizar Compra</button>
+                <button id="finalizar-compra" class="finalizar-compra" type="submit" value="enviar"> Finalizar Compra</button>
             </footer>
         </div>
 

@@ -347,6 +347,14 @@ input[type=text] {
     height: 40px;
     width: 100%;
 }
+input[type=email] {
+    border: none;
+    border-bottom: 1px solid black;
+    height: 40px;
+    width: 100%;
+}
+
+
 .contenedor-inputs-datos>label{
     margin-top:30px;
 }
@@ -405,6 +413,8 @@ input[type=text] {
     background-color: green;
     color: white;
 }
+
+
 
 /*MODAL MENSAJE DE ABANDONAR CARRITO*/
 .modal-mensaje{

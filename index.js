@@ -465,9 +465,18 @@ seguirComprando.onclick=()=>{
     }
   };
   
-
-
-
-
 //Boton Finalizar compra --->recuerda al usuario rellenar los inputs de texto
 //--envia el formulario y cierra el carrito vacio
+const botonFinalizarCompra = document.getElementById('finalizar-compra');
+const formulario = document.getElementById('formulario-datos');
+const inputNombre = document.getElementById('input-nombre');
+const inputMail = document.getElementById('input-mail');
+
+
+botonFinalizarCompra.onclick=()=>{
+   checkout.classList.add('hidden');
+   mostrarProductosCarrito.classList.add('hidden');
+   accionesCarrito.classList.add('hidden');
+   menu.classList.add('hidden')
+
+}
