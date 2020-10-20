@@ -183,7 +183,7 @@ h3{
 }
 
 .menu-carrito{
-    width: 400px;
+    /* width: 400px; */
     height: 100vh;
     background-color: whitesmoke;
     border-left: 1px solid #dedede;
@@ -192,9 +192,8 @@ h3{
     position: fixed;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px;
     z-index: 4;
-
 }
 
 .encabezado-menu{
@@ -208,6 +207,10 @@ h3{
 .encabezado-menu>h2{
     margin-top: 0;
 }
+.encabezado-menu>p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 #cerrar-menu{
     border: none;
@@ -218,12 +221,15 @@ h3{
 
 /*Contenedor de los elementos dentro del carrito*/
 .contenido-del-carrito{
+    max-width: 316px;
     position: relative;
     overflow: scroll;
     height: 300px;
+    margin-top: 20px;
 }
 /*Tarjetas de Productos dentro del carrito*/
 .producto-carrito{
+    max-width: 300px;
     display: flex;
     background-color: whitesmoke;
     border-top: 1px solid #e0e0e0;
@@ -232,10 +238,11 @@ h3{
 
 .imagen-en-carrito{
     width: 110px;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .info-producto-carrito{
+    max-width: 170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -243,6 +250,7 @@ h3{
 
 .nombre-producto-carrito{
     margin-right: 70px;
+    
 }
 
 .limpiar-del-carrito{
@@ -587,10 +595,6 @@ input[type=email] {
     overflow: hidden;
 }
 
-
-
-
-
 /*FOOTER*/
 .footer-general{
     height: 100px;
@@ -603,3 +607,171 @@ input[type=email] {
 .fa-heart{
     color:red;
 }
+
+
+/*---------------------------------------RESPONSIVE-----------------------------------------------*/
+
+ /* Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+  
+
+    #lupita-responsive{
+        position: absolute;
+        right: 30px;
+        top: 225px;
+    }
+    
+    .menu-responsive{
+        max-width: 320px;
+        height: 100vh;
+        background-color: white;
+        border-left: 1px solid #dedede;
+        top: 0;
+        right: 0;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        z-index: 4;
+    }
+    
+    #cerrar-menu, #limpiar-filtros, #filtro-nombre{
+        background-color: white;
+    }
+    
+    .ver-filtros-responsive{
+        display: flex;
+        width: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    .ver-filtros-responsive>button{
+        background-color: white;
+        border: none;
+    }
+
+    .menu-carrito{
+        max-width: 320px;
+        height: 100vh;
+    }
+
+    
+    
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+    
+    #lupita-responsive{
+        position: absolute;
+        right: 30px;
+        top: 225px;
+    }
+
+    .menu-responsive{
+        max-width: 320px;
+        height: 100vh;
+        background-color: white;
+        border-left: 1px solid #dedede;
+        top: 0;
+        right: 0;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        z-index: 4;
+    }
+    
+    #cerrar-menu, #limpiar-filtros, #filtro-nombre{
+        background-color: white;
+    }
+    
+    .ver-filtros-responsive{
+        display: flex;
+        width: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    .ver-filtros-responsive>button{
+        background-color: white;
+        border: none;
+    }
+
+    .menu-carrito{
+        max-width: 320px;
+        height: 100vh;
+        overflow: scroll;
+    }
+    
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+   
+
+    #lupita-responsive{
+        position: absolute;
+        right: 30px;
+        top: 225px;
+    }
+
+    .menu-responsive{
+        max-width: 320px;
+        height: 100vh;
+        background-color: white;
+        border-left: 1px solid #dedede;
+        top: 0;
+        right: 0;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        z-index: 4;
+    }
+    #cerrar-menu, #limpiar-filtros, #filtro-nombre{
+        background-color: white;
+    }
+
+    .ver-filtros-responsive{
+        display: flex;
+        width: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    .ver-filtros-responsive>button{
+        background-color: white;
+        border: none;
+    }
+
+    .overlay{
+        height: 100vh;
+    }
+    .menu-carrito{
+        max-width: 320px;
+        height: 100vh;
+        overflow: scroll;
+    }
+
+    .overlay2{
+        width: 380px;
+        justify-content: center;
+    }
+
+    .modal-mensaje{
+        max-width: 300px;
+    }
+
+    .accion-mensaje>button{
+        max-width: 100px;
+    }
+    
+
+}
+
+
+
+
+
+
+

@@ -10,7 +10,7 @@
     <title>ADA SHOP</title>
 </head>
 
-<body>
+<body >
     <!--HEADER-->
 
     <header>
@@ -34,7 +34,7 @@
 
     <!--SECCIÓN CONTENEDORA DEL MENU CARRITO-->
 
-    <section id="overlay-carrito" class="overlay hidden">
+    <section id="overlay-carrito" class="overlay ">
         <div id="menu-carrito" class="menu-carrito ">
             <div class="encabezado-menu">
                 <h2>Carrito</h2>
@@ -296,6 +296,96 @@
 
     </section>
 
+    <!--SECCIÓN DEL MENU DE FILTROS EN RESPONSIVE-->
+    <section id="overlay-filtros" class="overlay hidden ">
+        <div id="menu-filtros" class="menu-responsive ">
+            <div class="encabezado-menu">
+                <h2></h2>
+                <button id="cerrar-menu"><i class="far fa-window-close"></i></button>
+            </div>
+            <section class="filtros">
+                <!--ASIDE-->
+                <aside>
+                    <div class="encabezado-filtros">
+                        <h2>FILTROS</h2>
+                        <button id="limpiar-filtros" class="limpiar"><i class="fas fa-trash-alt"></i> Limpiar</button>
+                    </div>
+    
+                    <div>
+                        <form action="">
+                            <div>
+                                <label for="filtro-nombre">
+                                    <h3>BÚSQUEDA</h3>
+                                    <input type="text" id="filtro-nombre" class="search" placeholder="Buscar Productos">
+                            </div>
+                            <i class="fas fa-search" id="lupita-responsive"></i>
+                    </div>
+                    <label for="categoria" class="categorias">
+                        <h3>CATEGORÍA</h3>
+                        <div> <input type="checkbox" id="categoria" name="categoria" value="notebooks"> NOTEBOOKS</div>
+                        <div> <input type="checkbox" id="categoria" name="categoria" value="consolas"> CONSOLAS</div>
+                        <div> <input type="checkbox" id="categoria" name="categoria" value="camaras"> CÁMARAS</div>
+                        <div> <input type="checkbox" id="categoria" name="categoria" value="celulares"> CELULARES</div>
+                        <div> <input type="checkbox" id="categoria" name="categoria" value="accesorios"> ACCESORIOS</div>
+                    </label>
+    
+    
+                    <label for="puntaje" class="puntaje">
+                        <h3>PUNTAJE</h3>
+                        <div>
+                            <input type="checkbox" id="puntaje" name="rating" value="5">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            (5)
+                        </div>
+                        <div>
+                            <input type="checkbox" id="puntaje" name="rating" value="4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            (4)
+                        </div>
+                        <div>
+                            <input type="checkbox" id="puntaje" name="rating" value="3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            (3)
+                        </div>
+                        <div>
+                            <input type="checkbox" id="puntaje" name="rating" value="2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            (2)
+                        </div>
+                        <div>
+                            <input type="checkbox" id="puntaje" name="rating" value="1">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            (1)
+                        </div>
+                    </label>
+    
+                    </form>
+                    </div>
+                </aside>
+            </section>
+    </section>
+
+
     <!--SECCIÓN DEL MODAL DE FINALIZAR COMPRA-->
     <section id="overlay-checkout" class="overlay2 hidden">
         <div class="modal-checkout">
@@ -327,7 +417,7 @@
                             <label for=""><input type="checkbox" name="descuento" id="tiene-descuento"> Tengo tarjeta de
                                 descuento</label>
                         </div>
-                    </form>
+                    </form type="submit" value="enviar" >
                 </div>
                 <div class="resumen">
                     <h3>Resumen</h3>
@@ -370,7 +460,7 @@
     <!--SECCION PRINCIPAL-->
     <section class="principal">
         <!--SECCIÓN FILTROS-->
-        <section class="filtros">
+        <section id="filtros-normal" class="filtros hidden">
             <!--ASIDE-->
             <aside>
                 <div class="encabezado-filtros">
@@ -457,10 +547,18 @@
             <!--ENCABEZADO DE LA SECCIÓN TARJETAS-->
             <div class="encabezado-tarjetas">
                 <p>Mostrando <span id="mostrando-productos">12</span> productos de (12)</p>
-                <div class="ver-como">
+                <div id="ver-como" class="ver-como hidden">
                     <p>Ver como </p>
                     <button id="boton-grilla" class="disposicion"> <i class="fas fa-th"></i></button>
                     <button id="boton-lista" class="disposicion"> <i class="fas fa-list"></i></button>
+                </div>
+
+                <!--ENCABEZADO DE LA SECCIÓN TARJETAS EN RESPONSIVE-->
+                <div id="ver-filtros-responsive" class="ver-filtros-responsive">
+                    <button id="boton-filtros-responsive" class="boton-filtros-responsive">
+                        <i class="fas fa-filter"></i>
+                        <p>Filtros</p>
+                    </button>
                 </div>
             </div>
 
@@ -773,7 +871,7 @@
     <!--FOOTER-->
     <footer class="footer-general">
         <div class="logo-container"> <img src="imagenes/iso_blanco.svg" alt="logo ada">ADA SHOP</div>
-        <p> - Gracias por visitarnos! <i class="fas fa-heart"></i></p>
+        <p> Gracias por visitarnos! <i class="fas fa-heart"></i></p>
 
     </footer>
 

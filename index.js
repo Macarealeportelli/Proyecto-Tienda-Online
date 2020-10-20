@@ -473,6 +473,7 @@ const inputNombre = document.getElementById('input-nombre');
 const inputMail = document.getElementById('input-mail');
 
 
+
 botonFinalizarCompra.onclick=()=>{
    checkout.classList.add('hidden');
    mostrarProductosCarrito.classList.add('hidden');
