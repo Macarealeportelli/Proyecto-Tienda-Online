@@ -34,7 +34,7 @@
 
     <!--SECCIÓN CONTENEDORA DEL MENU CARRITO-->
 
-    <section id="overlay-carrito" class="overlay ">
+    <section id="overlay-carrito" class="overlay hidden">
         <div id="menu-carrito" class="menu-carrito ">
             <div class="encabezado-menu">
                 <h2>Carrito</h2>
@@ -441,6 +441,64 @@
 
 
     </section>
+
+    <!--SECCIÓN DEL MODAL DE FINALIZAR COMPRA RESPONSIVE-->
+
+    <section id="overlay-filtros" class="overlay hidden ">
+        <div class="modal-checkout">
+            <h2>Checkout</h2>
+            <div class="contenedor-general-datos-checkout">
+                <div class="container-chekout">
+                    <form action="" id="formulario-datos" class="datos-comprador">
+                        <div class="contenedor-datos-personales">
+                            <h3>Datos Personales</h3>
+                            <div class="contenedor-inputs-datos">
+                                <label for="">
+                                    <p>Nombre y Apellido*</p>
+                                    <input id="input-nombre" type="text" placeholder="ej. Ada Lovelace" required">
+                                </label>
+                                <label for="">
+                                    <p> E-mail*</p>
+                                    <input id="input-mail" type="email" placeholder="ej. adalovelace@gmail.com" required>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="opciones-de-pago">
+                            <h3>Opciones de Pago</h3>
+                            <label for=""><input type="radio" name="pago" id="efectivo-debito" value="efectivo"
+                                    checked /> Efectivo/Débito
+                            </label>
+                            <label for=""><input type="radio" name="pago" id="tarjeta" value="tarjeta" /> Tarjeta de
+                                Crédito </label>
+                            <label for=""><input type="checkbox" name="envío" id="tiene-envio"> Necesito envío</label>
+                            <label for=""><input type="checkbox" name="descuento" id="tiene-descuento"> Tengo tarjeta de
+                                descuento</label>
+                        </div>
+                    </form type="submit" value="enviar" >
+                </div>
+                <div class="resumen">
+                    <h3>Resumen</h3>
+                    <div class="info-resumen">
+                        <p class="subtotal-checkout">Subtotal <span id="subtotal"> $82498</span></p>
+                        <p id="parrafo-descuento" class="descuento-checkout">Descuento 10% <span id="descuento"
+                                class="descuento-checkout"></span></p>
+                        <p id="parrafo-envio" class="envio-checkout">Envío <span id="envio"> </span></p>
+                        <p id="parrafo-recargo" class="recargo-checkout">Recargo <span id="recargo"
+                                class="recargo-checkout"> </span></p>
+                        <h2 class="total-checkout">Total <span id="total"> </span></h3>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer-checkout">
+                <button id="seguir-comprando" class="seguir-comprando">Seguir Comprando</button>
+                <button id="finalizar-compra" class="finalizar-compra" type="submit" value="enviar"> Finalizar Compra</button>
+            </footer>
+        </div>
+           
+            
+    </section>
+
 
     <!--SECCIÓN DEL MODAL CON MENSAJE DE ABANDONO DE CARRITO-->
     <section id="overlay-mensaje" class="overlay2 hidden">

@@ -744,9 +744,7 @@ input[type=email] {
         border: none;
     }
 
-    .overlay{
-        height: 100vh;
-    }
+    
     .menu-carrito{
         max-width: 320px;
         height: 100vh;
@@ -766,6 +764,22 @@ input[type=email] {
         max-width: 100px;
     }
     
+    .modal-checkout{
+        flex-direction: column;
+    }
+
+    .contenedor-general-datos-checkout{
+        flex-direction: column;
+    }
+ 
+    .contenedor-inputs-datos{
+        max-width: 200px;
+    }
+
+    footer>p{
+        max-width: 50%;
+        margin-right: 0;
+    }
 
 }
 
