@@ -635,8 +635,15 @@ input[type=email] {
         z-index: 4;
     }
     
-    #cerrar-menu, #limpiar-filtros, #filtro-nombre{
+    #limpiar-filtros, #filtro-nombre{
         background-color: white;
+    }
+
+    #cerrar-menu-filtros{
+        border: none;
+        background-color: white;
+        margin-top: 5px;
+        font-size: 30px;
     }
     
     .ver-filtros-responsive{
@@ -682,8 +689,15 @@ input[type=email] {
         z-index: 4;
     }
     
-    #cerrar-menu, #limpiar-filtros, #filtro-nombre{
+    #limpiar-filtros, #filtro-nombre{
         background-color: white;
+    }
+
+    #cerrar-menu-filtros{
+        border: none;
+        background-color: white;
+        margin-top: 5px;
+        font-size: 30px;
     }
     
     .ver-filtros-responsive{
@@ -729,8 +743,16 @@ input[type=email] {
         padding: 20px;
         z-index: 4;
     }
-    #cerrar-menu, #limpiar-filtros, #filtro-nombre{
+    
+    #limpiar-filtros, #filtro-nombre{
         background-color: white;
+    }
+
+    #cerrar-menu-filtros{
+        border: none;
+        background-color: white;
+        margin-top: 5px;
+        font-size: 30px;
     }
 
     .ver-filtros-responsive{
