@@ -323,12 +323,7 @@ seguirComprando.onclick=()=>{
 
 //Cáclculos del checkout
 
-// pagaConTarjeta.onclick=()=>{
-//     const recargo = subtotal* 0.1
-//     recargoCheckout.textContent = "$" + recargo.toFixed(2)
-//     parrafoRecargo.classList.remove('hidden')
-//     totalCheckout.textContent = "$" + (subtotal + recargo) 
-// }
+
 
  //Funcion para cuando esta checkeado tarjeta de credito y las distintas variantes
  pagaConTarjeta.onclick = () => {
@@ -422,11 +417,11 @@ seguirComprando.onclick=()=>{
   tieneEnvio.oninput = () => {
     if (estaChequeadoEnvio()) {
       envioCheckout.textContent = gastoDeEnvio;
-      totalCheckout.textContent = parseFloat(totalCheckout.textContent) + gastoDeEnvio
+      totalCheckout.textContent = parseFloat(totalCheckout.textContent) + gastoDeEnvio;
     }
     else {
       envioCheckout.textContent = "";
-      totalCheckout.textContent = totalCheckout.textContent - gastoDeEnvio
+      totalCheckout.textContent = totalCheckout.textContent - gastoDeEnvio;
     }
   };
   
@@ -438,7 +433,7 @@ seguirComprando.onclick=()=>{
   
   const obtenerDescuento = (subtotal) => {
     const descuento = subtotal * 0.1;
-    return descuento
+    return descuento;
   };
   
   const obtenerTotalConEnvio = (subtotal) => {
