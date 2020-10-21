@@ -466,14 +466,19 @@ const botonFinalizarCompra = document.getElementById('finalizar-compra');
 const formulario = document.getElementById('formulario-datos');
 // const inputNombre = document.getElementById('input-nombre');
 const inputMail = document.getElementById('input-mail');
-
+const noHayProductosEnCarrito = document.getElementById("leyenda-sin-productos-agragados")
+const cantidadDeProductosEnCarrito = document.getElementById('leyenda-cantidad-productos-agragados')
+const contenidoCarrito = document.getElementById('contenido-carrito')
 
 
 botonFinalizarCompra.onclick=()=>{
    checkout.classList.add('hidden');
    mostrarProductosCarrito.classList.add('hidden');
    accionesCarrito.classList.add('hidden');
-   menu.classList.add('hidden')
+   menu.classList.add('hidden');
+   cantidadDeProductosEnCarrito.classList.add('hidden');
+   noHayProductosEnCarrito.classList.remove('hidden');
+   contenidoCarrito.textContent = "Carrito(0 items)";
 
 }
 
