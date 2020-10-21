@@ -491,4 +491,5 @@ botonFiltrosResponsive.onclick=()=>{
 
 cerrarMenuFiltros.onclick=()=>{
     filtrosResponsive.classList.add('hidden')
+    body.classList.remove ('no-scroll')
 }
