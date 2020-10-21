@@ -218,11 +218,11 @@ botonLimpiarFiltros.onclick = () => {
 
 // //CONTADOR DE PRODUCTOS MOSTRADOS
 // const mostrarProductos = document.getElementById("mostrando-productos")
-// const contadorDeProductosEscondidos = 0
+// let contadorDeProductosEscondidos = 0
 
 // const tarjetasEscondidas =()=>{
 //     for (let card of cards){
-//         if (card.classList === hidden){
+//         if (card.classList.contains('hidden') === true){
 //             contadorDeProductosEscondidos = contadorDeProductosEscondidos + 1
 //         }
 //     }
