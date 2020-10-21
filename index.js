@@ -6,7 +6,7 @@ const descripcionesProductos = document.querySelectorAll("#descripcion-producto"
 const contenidosProductos = document.querySelectorAll("#contenido");
 
 
-//DE GRILLA A LISTA
+//VISTA DE GRILLA A LISTA------------------------------------------------------------------------------------------------------------
 botonLista.onclick = () => {
     //recorro todas las tarjetas
     for (let card of cards) {
@@ -25,7 +25,7 @@ botonLista.onclick = () => {
     }
 }
 
-//DE LISTA A GRILLA
+//VISTA DE LISTA A GRILLA-----------------------------------------------------------------------------------------------------------
 botonGrilla.onclick = () => {
     //recorro todas las tarjetas
     for (let card of cards) {
@@ -47,7 +47,7 @@ botonGrilla.onclick = () => {
 }
 
 
-// // //CONTADOR DE PRODUCTOS MOSTRADOS
+// // //CONTADOR DE PRODUCTOS MOSTRADOS---------------------------------------------------------------------------------------------
 // const mostrarProductos = document.getElementById("mostrando-productos")
 // let contadorDeProductosEscondidos = 0
 
@@ -66,7 +66,7 @@ botonGrilla.onclick = () => {
 // }
 
 
-//FILTROS
+//FILTROS------------------------------------------------------------------------------------------------------------------------
 const filtroBusqueda = document.getElementById("filtro-nombre");
 const filtroCategoria = document.querySelectorAll("#categoria");
 const filtroRating = document.querySelectorAll("#puntaje");
@@ -224,9 +224,7 @@ for (let checkboxRating of filtroRating) {
 }
 
 
-
-
-//LIMPIAR FILTROS
+//LIMPIAR FILTROS----------------------------------------------------------------------------------------------------------------------
 const botonLimpiarFiltros = document.getElementById("limpiar-filtros");
 
 botonLimpiarFiltros.onclick = () => {
@@ -242,13 +240,7 @@ botonLimpiarFiltros.onclick = () => {
     }
 }
 
-
-
-
-
-
-
-//APARICIÓN DE MODAL DEL CARRITO
+//APARICIÓN DE MODAL DEL CARRITO------------------------------------------------------------------------------------------------------
 const abrirCarrito = document.getElementById("carrito");
 const cerrarCarrito = document.getElementById("cerrar-menu");
 const menu = document.getElementById("overlay-carrito");
@@ -266,7 +258,7 @@ cerrarCarrito.onclick = () => {
     body.classList.remove("no-scroll");
 }
 
-//ACCIONES DE LOS BOTONES DEL CARRITO
+//ACCIONES DE LOS BOTONES DEL CARRITO------------------------------------------------------------------------------------------------
 
 //BOTON VACIAR
 const vaciarCarrito = document.getElementById("vaciar-carrito");
@@ -295,7 +287,7 @@ confirmarVaciarCarrito.onclick=()=>{
     mensajeAbandonarCarrito.classList.add('hidden');
 }
 
-//CHECKOUT
+//CHECKOUT -----------------------------------------------------------------------------------------------------------------------------
 
 const comprarCarrito = document.getElementById('comprar-carrito');
 const checkout = document.getElementById('overlay-checkout');
@@ -318,7 +310,7 @@ const gastoDeEnvio = 300;
 
 const subtotal= 82498
 
-//BOTON COMPRAR EN CARRITO ---> ABRE EL MODAL DEL CHECKOUT
+//BOTON COMPRAR EN CARRITO ---> ABRE EL MODAL DEL CHECKOUT------------------------------------------------------------
 comprarCarrito.onclick=()=>{
     checkout.classList.remove('hidden');
     totalCheckout.textContent = "$" + subtotal;
@@ -327,16 +319,14 @@ comprarCarrito.onclick=()=>{
     parrafoEnvio.classList.add('hidden')
 }
 
-//Boton Seguir Comprando ---> cierra el checkout
+//Boton Seguir Comprando ---> cierra el checkout-----------------------------------------------------------------------
 const seguirComprando = document.getElementById('seguir-comprando');
 
 seguirComprando.onclick=()=>{
     checkout.classList.add('hidden');
 }
 
-//Cáclculos del checkout
-
-
+//Cáclculos del checkout------------------------------------------------------------------------------------------------
 
  //Funcion para cuando esta checkeado tarjeta de credito y las distintas variantes
  pagaConTarjeta.onclick = () => {
@@ -470,7 +460,7 @@ seguirComprando.onclick=()=>{
     }
   };
   
-//Boton Finalizar compra --->recuerda al usuario rellenar los inputs de texto
+//Boton Finalizar compra --->recuerda al usuario rellenar los inputs de texto-------------------------------------
 //--envia el formulario y cierra el carrito vacio
 const botonFinalizarCompra = document.getElementById('finalizar-compra');
 const formulario = document.getElementById('formulario-datos');
@@ -487,7 +477,7 @@ botonFinalizarCompra.onclick=()=>{
 
 }
 
-//-------------FUNCIONALIDADES RESPONSIVE------------------------------
+//-------------FUNCIONALIDADES RESPONSIVE--------------------------------------------------------------------------------
 const botonFiltrosResponsive = document.getElementById('boton-filtros-responsive');
 const filtrosResponsive = document.getElementById('overlay-filtros');
 const cerrarMenuFiltros = document.getElementById('cerrar-menu-filtros')
