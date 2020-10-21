@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <title>ADA SHOP</title>
 </head>
@@ -19,15 +20,14 @@
                 <img src="imagenes/iso_blanco.svg" role="logo ada">
                 <p>ADA SHOP</p>
             </div>
-            <button id="carrito" class="boton-carrito">
+            <button id="carrito" class="boton-carrito" aria-label="boton-carrito">
                 <i class="fas fa-shopping-cart"></i>
                 Carrito (0 items)
             </button>
         </nav>
 
         <!--ENCABEZADO DE PÁGINA-->
-        <div class="banner">
-
+        <div class="banner" aria-labelledby="electronica">
             <h1>ELECTRÓNICA</h1>
         </div>
     </header>
@@ -35,25 +35,25 @@
     <!--SECCIÓN CONTENEDORA DEL MENU CARRITO-->
 
     <section id="overlay-carrito" class="overlay hidden">
-        <div id="menu-carrito" class="menu-carrito ">
+        <div id="menu-carrito" class="menu-carrito " aria-label="menu-carrito">
             <div class="encabezado-menu">
                 <h2>Carrito</h2>
-                <button id="cerrar-menu"><i class="far fa-window-close"></i></button>
+                <button id="cerrar-menu" aria-label="cerrar-menu-carrito"><i class="far fa-window-close"></i></button>
             </div>
-            <p id="leyenda-sin-productos-agragados">No tienes ningun producto en tu carrito. ¡Agrega algunos!</p>
-            <p id="leyenda-cantidad-productos-agragados" class=" hidden"> 1 producto(s) agregado(s)</p>
+            <p id="leyenda-sin-productos-agragados" class="hidden">No tienes ningun producto en tu carrito. ¡Agrega algunos!</p>
+            <p id="leyenda-cantidad-productos-agragados" class=" " aria-live="productos-en-el-carrito"> 2 producto(s) agregado(s)</p>
 
             <div id="contenido-del-carrito" class="contenido-del-carrito ">
                 <!--Tarjetas de productos dentro del carrito-->
-                <article id="producto-carrito" class="producto-carrito ">
+                <article id="producto-carrito" class="producto-carrito " aria-label="celular-xiaomi">
                     <div>
-                        <img class="imagen-en-carrito" src="imagenes/xiaomi.jpg" alt="celular xiaomi">
+                        <img class="imagen-en-carrito" src="imagenes/xiaomi.jpg" alt="celular-xiaomi">
                     </div>
                     <div>
                         <div class="info-producto-carrito">
                             <h3 class="nombre-producto-carrito">Celular Xiaomi</h3>
-                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
-                                    class="far fa-trash-alt"></i></button>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito far fa-trash-alt"><i
+                                    aria-label="limpiar-del-carrito"></i></button>
                         </div>
                         <div class="precio-producto-carrito">
                             <label for="">
@@ -65,15 +65,15 @@
                         </div>
                     </div>
                 </article>
-                <article id="producto-carrito" class="producto-carrito ">
+                <article id="producto-carrito" class="producto-carrito " aria-label="playstation-4">
                     <div>
-                        <img class="imagen-en-carrito" src="imagenes/ps4.jpg" alt="playstation 4">
+                        <img class="imagen-en-carrito" src="imagenes/ps4.jpg" alt="playstation-4">
                     </div>
                     <div>
                         <div class="info-producto-carrito">
                             <h3 class="nombre-producto-carrito">PlayStation 4</h3>
-                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
-                                    class="far fa-trash-alt"></i></button>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito far fa-trash-alt"><i
+                                    aria-label="limpiar-del-carrito"></i></button>
                         </div>
                         <div class="precio-producto-carrito">
                             <label for="">
@@ -85,15 +85,15 @@
                         </div>
                     </div>
                 </article>
-                <article id="producto-carrito" class="producto-carrito hidden">
+                <article id="producto-carrito" class="producto-carrito hidden" aria-label="camara-nikon">
                     <div>
                         <img class="imagen-en-carrito" src="imagenes/nikon.jpg" alt="cámara nikon">
                     </div>
                     <div>
                         <div class="info-producto-carrito">
                             <h3 class="nombre-producto-carrito">Cámara Nikon</h3>
-                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
-                                    class="far fa-trash-alt"></i></button>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito far fa-trash-alt"><i
+                                aria-label="limpiar-del-carrito"></i></button>
                         </div>
                         <div class="precio-producto-carrito">
                             <label for="">
@@ -105,15 +105,15 @@
                         </div>
                     </div>
                 </article>
-                <article id="producto-carrito" class="producto-carrito hidden">
+                <article id="producto-carrito" class="producto-carrito hidden" aria-label="headphones-sony">
                     <div>
                         <img class="imagen-en-carrito" src="imagenes/sony.jpg" alt="headphones sony">
                     </div>
                     <div>
                         <div class="info-producto-carrito">
                             <h3 class="nombre-producto-carrito">Headphones Sony</h3>
-                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
-                                    class="far fa-trash-alt"></i></button>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito far fa-trash-alt"><i
+                                aria-label="limpiar-del-carrito"></i></button>
                         </div>
                         <div class="precio-producto-carrito">
                             <label for="">
@@ -125,15 +125,15 @@
                         </div>
                     </div>
                 </article>
-                <article id="producto-carrito" class="producto-carrito hidden">
+                <article id="producto-carrito" class="producto-carrito hidden" aria-label="nintendo-switch">
                     <div>
                         <img class="imagen-en-carrito" src="imagenes/nintendo.jpg" alt="nintendo switch">
                     </div>
                     <div>
                         <div class="info-producto-carrito">
                             <h3 class="nombre-producto-carrito">Ninendo Switch</h3>
-                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
-                                    class="far fa-trash-alt"></i></button>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito far fa-trash-alt"><i
+                                aria-label="limpiar-del-carrito"></i></button>
                         </div>
                         <div class="precio-producto-carrito">
                             <label for="">
@@ -145,15 +145,15 @@
                         </div>
                     </div>
                 </article>
-                <article id="producto-carrito" class="producto-carrito hidden">
+                <article id="producto-carrito" class="producto-carrito hidden" aria-label="notebook-asus">
                     <div>
                         <img class="imagen-en-carrito" src="imagenes/asus.jpg" alt="notebook asus">
                     </div>
                     <div>
                         <div class="info-producto-carrito">
                             <h3 class="nombre-producto-carrito">Notebook Asus</h3>
-                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
-                                    class="far fa-trash-alt"></i></button>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito far fa-trash-alt"><i
+                                aria-label="limpiar-del-carrito"></i></button>
                         </div>
                         <div class="precio-producto-carrito">
                             <label for="">
@@ -165,15 +165,15 @@
                         </div>
                     </div>
                 </article>
-                <article id="producto-carrito" class="producto-carrito hidden">
+                <article id="producto-carrito" class="producto-carrito hidden" aria-label="notebook-msi">
                     <div>
                         <img class="imagen-en-carrito" src="imagenes/msi.jpg" alt="notebook msi">
                     </div>
                     <div>
                         <div class="info-producto-carrito">
                             <h3 class="nombre-producto-carrito">Notebook MSI</h3>
-                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
-                                    class="far fa-trash-alt"></i></button>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito far fa-trash-alt"><i
+                                aria-label="limpiar-del-carrito"></i></button>
                         </div>
                         <div class="precio-producto-carrito">
                             <label for="">
@@ -185,15 +185,15 @@
                         </div>
                     </div>
                 </article>
-                <article id="producto-carrito" class="producto-carrito hidden">
+                <article id="producto-carrito" class="producto-carrito hidden" aria-label="headphones-philips">
                     <div>
                         <img class="imagen-en-carrito" src="imagenes/philips.jpg" alt="headphones philips">
                     </div>
                     <div>
                         <div class="info-producto-carrito">
                             <h3 class="nombre-producto-carrito">Headphones Philips</h3>
-                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
-                                    class="far fa-trash-alt"></i></button>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito far fa-trash-alt"><i
+                                aria-label="limpiar-del-carrito"></i></button>
                         </div>
                         <div class="precio-producto-carrito">
                             <label for="">
@@ -205,15 +205,15 @@
                         </div>
                     </div>
                 </article>
-                <article id="producto-carrito" class="producto-carrito hidden">
+                <article id="producto-carrito" class="producto-carrito hidden" aria-label="macbook">
                     <div>
                         <img class="imagen-en-carrito" src="imagenes/macbook.jpg" alt="macbook">
                     </div>
                     <div>
                         <div class="info-producto-carrito">
                             <h3 class="nombre-producto-carrito">Macbook</h3>
-                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
-                                    class="far fa-trash-alt"></i></button>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito far fa-trash-alt"><i
+                                aria-label="limpiar-del-carrito"></i></button>
                         </div>
                         <div class="precio-producto-carrito">
                             <label for="">
@@ -225,15 +225,15 @@
                         </div>
                     </div>
                 </article>
-                <article id="producto-carrito" class="producto-carrito hidden">
+                <article id="producto-carrito" class="producto-carrito hidden" aria-label="iphone">
                     <div>
                         <img class="imagen-en-carrito" src="imagenes/iphone.jpg" alt="iphone">
                     </div>
                     <div>
                         <div class="info-producto-carrito">
                             <h3 class="nombre-producto-carrito">Iphone</h3>
-                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
-                                    class="far fa-trash-alt"></i></button>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito far fa-trash-alt"><i
+                                aria-label="limpiar-del-carrito"></i></button>
                         </div>
                         <div class="precio-producto-carrito">
                             <label for="">
@@ -245,15 +245,15 @@
                         </div>
                     </div>
                 </article>
-                <article id="producto-carrito" class="producto-carrito hidden">
+                <article id="producto-carrito" class="producto-carrito hidden" aria-label="xboxone">
                     <div>
                         <img class="imagen-en-carrito" src="imagenes/xbox.jpg" alt="xboxone">
                     </div>
                     <div>
                         <div class="info-producto-carrito">
                             <h3 class="nombre-producto-carrito">XboxOne</h3>
-                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
-                                    class="far fa-trash-alt"></i></button>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito far fa-trash-alt"><i
+                                aria-label="limpiar-del-carrito"></i></button>
                         </div>
                         <div class="precio-producto-carrito">
                             <label for="">
@@ -265,15 +265,15 @@
                         </div>
                     </div>
                 </article>
-                <article id="producto-carrito" class="producto-carrito hidden">
+                <article id="producto-carrito" class="producto-carrito hidden" aria-label="mouse-gamer">
                     <div>
                         <img class="imagen-en-carrito" src="imagenes/gamer.jpg" alt="mouse gamer">
                     </div>
                     <div>
                         <div class="info-producto-carrito">
                             <h3 class="nombre-producto-carrito">Mouse Gamer</h3>
-                            <button id="limpiar-del-carrito" class="limpiar-del-carrito"><i
-                                    class="far fa-trash-alt"></i></button>
+                            <button id="limpiar-del-carrito" class="limpiar-del-carrito far fa-trash-alt"><i
+                                aria-label="limpiar-del-carrito"></i></button>
                         </div>
                         <div class="precio-producto-carrito">
                             <label for="">
@@ -287,10 +287,10 @@
                 </article>
             </div>
             <div id="acciones-carrito" class="botones-de-accion  ">
-                <p id="subtotal" class="subtotal">Subtotal= $ 82498 </p>
+                <p id="subtotal" class="subtotal" aria-labelledby="subtotal">Subtotal= $ 82498 </p>
 
-                <button id="comprar-carrito" class="comprar-carrito">COMPRAR</button>
-                <button id="vaciar-carrito" class="vaciar-carrito">VACIAR</button>
+                <button id="comprar-carrito" class="comprar-carrito" aria-label="comprar-carrito">COMPRAR</button>
+                <button id="vaciar-carrito" class="vaciar-carrito" aria-label="vaciar-carrito">VACIAR</button>
             </div>
         </div>
 
@@ -298,17 +298,17 @@
 
     <!--SECCIÓN DEL MENU DE FILTROS EN RESPONSIVE-->
     <section id="overlay-filtros" class="overlay hidden ">
-        <div id="menu-filtros" class="menu-responsive ">
+        <div id="menu-filtros" class="menu-responsive " >
             <div class="encabezado-menu">
                 <h2></h2>
-                <button id="cerrar-menu-filtros"><i class="far fa-window-close"></i></button>
+                <button id="cerrar-menu-filtros" aria-label="cerrar-filtros"><i class="far fa-window-close"></i></button>
             </div>
             <section class="filtros">
                 <!--ASIDE-->
-                <aside>
+                <aside aria-labelledby="filtros-de-busqueda">
                     <div class="encabezado-filtros">
                         <h2>FILTROS</h2>
-                        <button id="limpiar-filtros" class="limpiar"><i class="fas fa-trash-alt"></i> Limpiar</button>
+                        <button id="limpiar-filtros" class="limpiar"><i class="fas fa-trash-alt" aria-label="limpiar-filtros"></i> Limpiar</button>
                     </div>
     
                     <div>
@@ -316,24 +316,24 @@
                             <div>
                                 <label for="filtro-nombre">
                                     <h3>BÚSQUEDA</h3>
-                                    <input type="text" id="filtro-nombre" class="search" placeholder="Buscar Productos">
+                                    <input type="text" id="filtro-nombre" class="search" placeholder="Buscar Productos" aria-labelledby="escriba-el-producto-que-quiere-buscar">
                             </div>
                             <i class="fas fa-search" id="lupita-responsive"></i>
                     </div>
-                    <label for="categoria" class="categorias">
+                    <label for="categoria" class="categorias" aria-labelledby="filtro-por-categoria">
                         <h3>CATEGORÍA</h3>
-                        <div> <input type="checkbox" id="categoria" name="categoria" value="notebooks"> NOTEBOOKS</div>
-                        <div> <input type="checkbox" id="categoria" name="categoria" value="consolas"> CONSOLAS</div>
-                        <div> <input type="checkbox" id="categoria" name="categoria" value="camaras"> CÁMARAS</div>
-                        <div> <input type="checkbox" id="categoria" name="categoria" value="celulares"> CELULARES</div>
-                        <div> <input type="checkbox" id="categoria" name="categoria" value="accesorios"> ACCESORIOS</div>
+                        <div> <input type="checkbox" id="categoria" name="categoria" value="notebooks" aria-labelledby="notebooks"> NOTEBOOKS</div>
+                        <div> <input type="checkbox" id="categoria" name="categoria" value="consolas" aria-labelledby="consolas"> CONSOLAS</div>
+                        <div> <input type="checkbox" id="categoria" name="categoria" value="camaras" aria-labelledby="camaras"> CÁMARAS</div>
+                        <div> <input type="checkbox" id="categoria" name="categoria" value="celulares" aria-labelledby="celulares"> CELULARES</div>
+                        <div> <input type="checkbox" id="categoria" name="categoria" value="accesorios" aria-labelledby="accesorios"> ACCESORIOS</div>
                     </label>
     
     
-                    <label for="puntaje" class="puntaje">
+                    <label for="puntaje" class="puntaje" aria-labelledby="filtro-por-puntaje">
                         <h3>PUNTAJE</h3>
                         <div>
-                            <input type="checkbox" id="puntaje" name="rating" value="5">
+                            <input type="checkbox" id="puntaje" name="rating" value="5" aria-labelledby="cinco-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -342,7 +342,7 @@
                             (5)
                         </div>
                         <div>
-                            <input type="checkbox" id="puntaje" name="rating" value="4">
+                            <input type="checkbox" id="puntaje" name="rating" value="4" aria-labelledby="cuatro-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -351,7 +351,7 @@
                             (4)
                         </div>
                         <div>
-                            <input type="checkbox" id="puntaje" name="rating" value="3">
+                            <input type="checkbox" id="puntaje" name="rating" value="3" aria-labelledby="tres-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -360,7 +360,7 @@
                             (3)
                         </div>
                         <div>
-                            <input type="checkbox" id="puntaje" name="rating" value="2">
+                            <input type="checkbox" id="puntaje" name="rating" value="2" aria-labelledby="dos-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
@@ -369,7 +369,7 @@
                             (2)
                         </div>
                         <div>
-                            <input type="checkbox" id="puntaje" name="rating" value="1">
+                            <input type="checkbox" id="puntaje" name="rating" value="1" aria-labelledby="una-estrella">
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
@@ -388,54 +388,54 @@
 
     <!--SECCIÓN DEL MODAL DE FINALIZAR COMPRA-->
     <section id="overlay-checkout" class="overlay2 hidden">
-        <div class="modal-checkout">
+        <div class="modal-checkout" aria-labelledby="checkout">
             <h2>Checkout</h2>
             <div class="contenedor-general-datos-checkout">
                 <div class="container-chekout">
                     <form action="" id="formulario-datos" class="datos-comprador">
-                        <div class="contenedor-datos-personales">
+                        <div class="contenedor-datos-personales" aria-labelledby="completar-datos-personales">
                             <h3>Datos Personales</h3>
                             <div class="contenedor-inputs-datos">
                                 <label for="">
                                     <p>Nombre y Apellido*</p>
-                                    <input id="input-nombre" type="text" placeholder="ej. Ada Lovelace" required">
+                                    <input id="input-nombre" type="text" placeholder="ej. Ada Lovelace" required aria-labelledby="escriba-su-nombre-aqui" aria-live="polite">
                                 </label>
                                 <label for="">
                                     <p> E-mail*</p>
-                                    <input id="input-mail" type="email" placeholder="ej. adalovelace@gmail.com" required>
+                                    <input id="input-mail" type="email" placeholder="ej. adalovelace@gmail.com" required aria-labelledby="escriba-su-email-aqui" aria-live="polite">
                                 </label>
                             </div>
                         </div>
-                        <div class="opciones-de-pago">
+                        <div class="opciones-de-pago" aria-labelledby="opciones-de-pago">
                             <h3>Opciones de Pago</h3>
                             <label for=""><input type="radio" name="pago" id="efectivo-debito" value="efectivo"
-                                    checked /> Efectivo/Débito
+                                    checked aria-labelledby="efectivo-debito"/> Efectivo/Débito
                             </label>
-                            <label for=""><input type="radio" name="pago" id="tarjeta" value="tarjeta" /> Tarjeta de
+                            <label for=""><input type="radio" name="pago" id="tarjeta" value="tarjeta" aria-labelledby="tarjeta de credito" /> Tarjeta de
                                 Crédito </label>
-                            <label for=""><input type="checkbox" name="envío" id="tiene-envio"> Necesito envío</label>
-                            <label for=""><input type="checkbox" name="descuento" id="tiene-descuento"> Tengo tarjeta de
+                            <label for=""><input type="checkbox" name="envío" id="tiene-envio" aria-labelledby="seleccione-si-necesita-envio"> Necesito envío</label>
+                            <label for=""><input type="checkbox" name="descuento" id="tiene-descuento" aria-labelledby="seleccione-si-tiene-tarjeta-de-descuento"> Tengo tarjeta de
                                 descuento</label>
                         </div>
                     </form type="submit" value="enviar" >
                 </div>
-                <div class="resumen">
+                <div class="resumen" aria-labelledby="resumen-de-compra">
                     <h3>Resumen</h3>
                     <div class="info-resumen">
-                        <p class="subtotal-checkout">Subtotal <span id="subtotal"> $82498</span></p>
-                        <p id="parrafo-descuento" class="descuento-checkout">Descuento 10% <span id="descuento"
+                        <p class="subtotal-checkout" aria-labelledby="subtotal-de-compra">Subtotal <span id="subtotal"> $82498</span></p>
+                        <p id="parrafo-descuento" class="descuento-checkout" aria-labelledby="descuento">Descuento 10% <span id="descuento"
                                 class="descuento-checkout"></span></p>
-                        <p id="parrafo-envio" class="envio-checkout">Envío <span id="envio"> </span></p>
-                        <p id="parrafo-recargo" class="recargo-checkout">Recargo <span id="recargo"
+                        <p id="parrafo-envio" class="envio-checkout" aria-labelledby="envio">Envío <span id="envio"> </span></p>
+                        <p id="parrafo-recargo" class="recargo-checkout" aria-labelledby="recargo">Recargo <span id="recargo"
                                 class="recargo-checkout"> </span></p>
-                        <h2 class="total-checkout">Total <span id="total"> </span></h3>
+                        <h2 class="total-checkout" aria-labelledby="total-de-compra">Total <span id="total"> </span></h3>
                     </div>
                 </div>
             </div>
 
-            <footer class="footer-checkout">
-                <button id="seguir-comprando" class="seguir-comprando">Seguir Comprando</button>
-                <button id="finalizar-compra" class="finalizar-compra" type="submit" value="enviar"> Finalizar Compra</button>
+            <footer class="footer-checkout" aria-labelledby="botones-de-accion">
+                <button id="seguir-comprando" class="seguir-comprando" aria-label="seguir-comprando">Seguir Comprando</button>
+                <button id="finalizar-compra" class="finalizar-compra" type="submit" value="enviar" aria-label="finalizar-compra"> Finalizar Compra</button>
             </footer>
         </div>
 
@@ -445,47 +445,47 @@
     <!--SECCIÓN DEL MODAL DE FINALIZAR COMPRA RESPONSIVE-->
 
     <section id="overlay-filtros" class="overlay hidden ">
-        <div class="modal-checkout">
+        <div class="modal-checkout" aria-labelledby="checkout">
             <h2>Checkout</h2>
             <div class="contenedor-general-datos-checkout">
                 <div class="container-chekout">
                     <form action="" id="formulario-datos" class="datos-comprador">
-                        <div class="contenedor-datos-personales">
+                        <div class="contenedor-datos-personales" aria-labelledby="complete-sus-datos-personales">
                             <h3>Datos Personales</h3>
                             <div class="contenedor-inputs-datos">
                                 <label for="">
                                     <p>Nombre y Apellido*</p>
-                                    <input id="input-nombre" type="text" placeholder="ej. Ada Lovelace" required">
+                                    <input id="input-nombre" type="text" placeholder="ej. Ada Lovelace" required aria-labelledby="escriba-su-nombre-completo">
                                 </label>
                                 <label for="">
                                     <p> E-mail*</p>
-                                    <input id="input-mail" type="email" placeholder="ej. adalovelace@gmail.com" required>
+                                    <input id="input-mail" type="email" placeholder="ej. adalovelace@gmail.com" required aria-labelledby="escriba-su-email">
                                 </label>
                             </div>
                         </div>
-                        <div class="opciones-de-pago">
+                        <div class="opciones-de-pago" aria-labelledby="formas-de-pago">
                             <h3>Opciones de Pago</h3>
                             <label for=""><input type="radio" name="pago" id="efectivo-debito" value="efectivo"
-                                    checked /> Efectivo/Débito
+                                    checked aria-labelledby="efectivo-debito"/> Efectivo/Débito
                             </label>
-                            <label for=""><input type="radio" name="pago" id="tarjeta" value="tarjeta" /> Tarjeta de
+                            <label for=""><input type="radio" name="pago" id="tarjeta" value="tarjeta" aria-labelledby="tarjeta-de-credito"/> Tarjeta de
                                 Crédito </label>
-                            <label for=""><input type="checkbox" name="envío" id="tiene-envio"> Necesito envío</label>
-                            <label for=""><input type="checkbox" name="descuento" id="tiene-descuento"> Tengo tarjeta de
+                            <label for=""><input type="checkbox" name="envío" id="tiene-envio" aria-labelledby="seleccione-si-quiere-envio"> Necesito envío</label>
+                            <label for=""><input type="checkbox" name="descuento" id="tiene-descuento" aria-labelledby="seleccione-si-tiene-tarjeta-de-descuento"> Tengo tarjeta de
                                 descuento</label>
                         </div>
                     </form type="submit" value="enviar" >
                 </div>
-                <div class="resumen">
+                <div class="resumen" aria-labelledby="resumen-de-compra">
                     <h3>Resumen</h3>
                     <div class="info-resumen">
-                        <p class="subtotal-checkout">Subtotal <span id="subtotal"> $82498</span></p>
-                        <p id="parrafo-descuento" class="descuento-checkout">Descuento 10% <span id="descuento"
+                        <p class="subtotal-checkout" aria-labelledby="subtotal">Subtotal <span id="subtotal"> $82498</span></p>
+                        <p id="parrafo-descuento" class="descuento-checkout" aria-labelledby="descuento">Descuento 10% <span id="descuento"
                                 class="descuento-checkout"></span></p>
-                        <p id="parrafo-envio" class="envio-checkout">Envío <span id="envio"> </span></p>
-                        <p id="parrafo-recargo" class="recargo-checkout">Recargo <span id="recargo"
+                        <p id="parrafo-envio" class="envio-checkout" aria-labelledby="envio">Envío <span id="envio"> </span></p>
+                        <p id="parrafo-recargo" class="recargo-checkout" aria-labelledby="recargo">Recargo <span id="recargo"
                                 class="recargo-checkout"> </span></p>
-                        <h2 class="total-checkout">Total <span id="total"> </span></h3>
+                        <h2 class="total-checkout" aria-labelledby="total-de-compra">Total <span id="total"> </span></h3>
                     </div>
                 </div>
             </div>
@@ -503,12 +503,12 @@
     <!--SECCIÓN DEL MODAL CON MENSAJE DE ABANDONO DE CARRITO-->
     <section id="overlay-mensaje" class="overlay2 hidden">
         <div class="modal-mensaje">
-            <div class="mensaje">
+            <div class="mensaje" aria-labelledby="mensaje">
                 <h1>Estás por vaciar el carrito, ¿quieres continuar?</h1>
             </div>
             <div class="accion-mensaje">
-                <button id="cancelar" class="seguir-comprando">Cancelar</button>
-                <button id="vaciar" class="vaciar">Vaciar</button>
+                <button id="cancelar" class="seguir-comprando" aria-labelledby="cancelar">Cancelar</button>
+                <button id="vaciar" class="vaciar" aria-labelledby="vaciar">Vaciar</button>
             </div>
 
         </div>
@@ -520,10 +520,10 @@
         <!--SECCIÓN FILTROS-->
         <section id="filtros-normal" class="filtros hidden">
             <!--ASIDE-->
-            <aside>
+            <aside aria-labelledby="seccion-de-filtros">
                 <div class="encabezado-filtros">
                     <h2>FILTROS</h2>
-                    <button id="limpiar-filtros" class="limpiar"><i class="fas fa-trash-alt"></i> Limpiar</button>
+                    <button id="limpiar-filtros" class="limpiar" aria-labelledby="limpiar-filtros"><i class="fas fa-trash-alt"></i> Limpiar</button>
                 </div>
 
                 <div>
@@ -531,24 +531,24 @@
                         <div>
                             <label for="filtro-nombre">
                                 <h3>BÚSQUEDA</h3>
-                                <input type="text" id="filtro-nombre" class="search" placeholder="Buscar Productos">
+                                <input type="text" id="filtro-nombre" class="search" placeholder="Buscar Productos" aria-labelledby="busque-por-nombre-de-producto">
                         </div>
                         <i class="fas fa-search" id="lupita"></i>
                 </div>
-                <label for="categoria" class="categorias">
+                <label for="categoria" class="categorias" aria-labelledby="filtro-por-categoria">
                     <h3>CATEGORÍA</h3>
-                    <div> <input type="checkbox" id="categoria" name="categoria" value="notebooks"> NOTEBOOKS</div>
-                    <div> <input type="checkbox" id="categoria" name="categoria" value="consolas"> CONSOLAS</div>
-                    <div> <input type="checkbox" id="categoria" name="categoria" value="camaras"> CÁMARAS</div>
-                    <div> <input type="checkbox" id="categoria" name="categoria" value="celulares"> CELULARES</div>
-                    <div> <input type="checkbox" id="categoria" name="categoria" value="accesorios"> ACCESORIOS</div>
+                    <div> <input type="checkbox" id="categoria" name="categoria" value="notebooks" aria-labelledby="notebooks"> NOTEBOOKS</div>
+                    <div> <input type="checkbox" id="categoria" name="categoria" value="consolas" aria-labelledby="consolas"> CONSOLAS</div>
+                    <div> <input type="checkbox" id="categoria" name="categoria" value="camaras" aria-labelledby="camaras"> CÁMARAS</div>
+                    <div> <input type="checkbox" id="categoria" name="categoria" value="celulares" aria-labelledby="celulares"> CELULARES</div>
+                    <div> <input type="checkbox" id="categoria" name="categoria" value="accesorios" aria-labelledby="accesorios"> ACCESORIOS</div>
                 </label>
 
 
-                <label for="puntaje" class="puntaje">
+                <label for="puntaje" class="puntaje" aria-labelledby="filtro-por-puntaje">
                     <h3>PUNTAJE</h3>
                     <div>
-                        <input type="checkbox" id="puntaje" name="rating" value="5">
+                        <input type="checkbox" id="puntaje" name="rating" value="5" aria-labelledby="cinco-estrellas">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -557,7 +557,7 @@
                         (5)
                     </div>
                     <div>
-                        <input type="checkbox" id="puntaje" name="rating" value="4">
+                        <input type="checkbox" id="puntaje" name="rating" value="4" aria-labelledby="cuatro-estrellas" >
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -566,7 +566,7 @@
                         (4)
                     </div>
                     <div>
-                        <input type="checkbox" id="puntaje" name="rating" value="3">
+                        <input type="checkbox" id="puntaje" name="rating" value="3" aria-labelledby="tres-estrellas">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -575,7 +575,7 @@
                         (3)
                     </div>
                     <div>
-                        <input type="checkbox" id="puntaje" name="rating" value="2">
+                        <input type="checkbox" id="puntaje" name="rating" value="2" aria-labelledby="dos-estrellas">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
@@ -584,7 +584,7 @@
                         (2)
                     </div>
                     <div>
-                        <input type="checkbox" id="puntaje" name="rating" value="1">
+                        <input type="checkbox" id="puntaje" name="rating" value="1" aria-labelledby="una-estrellas">
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
@@ -604,16 +604,16 @@
         <section class="seccion-tarjetas">
             <!--ENCABEZADO DE LA SECCIÓN TARJETAS-->
             <div class="encabezado-tarjetas">
-                <p>Mostrando <span id="mostrando-productos">12</span> productos de (12)</p>
+                <p>Mostrando <span id="mostrando-productos" aria-live="polite" aria-labelledby="muestra-productos">12</span> productos de (12)</p>
                 <div id="ver-como" class="ver-como hidden">
                     <p>Ver como </p>
-                    <button id="boton-grilla" class="disposicion"> <i class="fas fa-th"></i></button>
-                    <button id="boton-lista" class="disposicion"> <i class="fas fa-list"></i></button>
+                    <button id="boton-grilla" class="disposicion" aria-label="como-grilla"> <i class="fas fa-th"></i></button>
+                    <button id="boton-lista" class="disposicion" aria-label="como-lista"> <i class="fas fa-list"></i></button>
                 </div>
 
                 <!--ENCABEZADO DE LA SECCIÓN TARJETAS EN RESPONSIVE-->
                 <div id="ver-filtros-responsive" class="ver-filtros-responsive hidden">
-                    <button id="boton-filtros-responsive" class="boton-filtros-responsive">
+                    <button id="boton-filtros-responsive" class="boton-filtros-responsive" aria-label="mostrar-filtros">
                         <i class="fas fa-filter"></i>
                         <p>Filtros</p>
                     </button>
@@ -623,7 +623,7 @@
             <!--SECCIÓN DE TARJETAS-->
             <div class="contenedor-tarjetas">
                 <article class="tarjeta grilla" id="producto" data-nombre="celular xiaomi" data-categoria="celulares"
-                    data-precio="22499" data-rating="3">
+                    data-precio="22499" data-rating="3" aria-labelledby="celular-xiaomi">
                     <div class="imagen-producto">
                         <img src="imagenes/xiaomi.jpg" alt="celular xiaomi">
                     </div>
@@ -634,20 +634,20 @@
                             consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
-                        <div class="puntaje-producto">
+                        <div class="puntaje-producto" aria-labelledby="tres-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <button id="boton-compra" class="boton-compra">COMPRAR</button>
+                        <button id="boton-compra" class="boton-compra" aria-label="comprar">COMPRAR</button>
                     </div>
 
                 </article>
 
                 <article class="tarjeta grilla" id="producto" data-nombre="playstation" data-categoria="consolas"
-                    data-precio="59999" data-rating="5">
+                    data-precio="59999" data-rating="5" aria-labelledby="playstation 4">
                     <div class="imagen-producto">
                         <img src="imagenes/ps4.jpg" alt="playstation 4">
                     </div>
@@ -658,7 +658,7 @@
                             consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
-                        <div class="puntaje-producto">
+                        <div class="puntaje-producto" aria-labelledby="cinco-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -666,13 +666,13 @@
                             <i class="fas fa-star"></i>
                         </div>
 
-                        <button id="boton-compra" class="boton-compra">COMPRAR</button>
+                        <button id="boton-compra" class="boton-compra" aria-label="comprar">COMPRAR</button>
                     </div>
 
                 </article>
 
                 <article class="tarjeta grilla" } id="producto" data-nombre="camara nikon" data-categoria="camaras"
-                    data-precio="54999" data-rating="2">
+                    data-precio="54999" data-rating="2" aria-labelledby="camara-nikon">
                     <div class="imagen-producto">
                         <img src="imagenes/nikon.jpg" alt="camara nikon">
                     </div>
@@ -683,7 +683,7 @@
                             consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
-                        <div class="puntaje-producto">
+                        <div class="puntaje-producto" aria-labelledby="dos-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
@@ -691,13 +691,13 @@
                             <i class="far fa-star"></i>
                         </div>
 
-                        <button id="boton-compra" class="boton-compra">COMPRAR</button>
+                        <button id="boton-compra" class="boton-compra" aria-label="comprar">COMPRAR</button>
                     </div>
 
                 </article>
 
                 <article class="tarjeta grilla" id="producto" data-nombre="headphones sony" data-categoria="accesorios"
-                    data-precio="24999" data-rating="3">
+                    data-precio="24999" data-rating="3" aria-labelledby="headphones-sony">
                     <div class="imagen-producto">
                         <img src="imagenes/sony.jpg" alt="headphones sony">
                     </div>
@@ -708,7 +708,7 @@
                             consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
-                        <div class="puntaje-producto">
+                        <div class="puntaje-producto" aria-labelledby="tres-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -716,13 +716,13 @@
                             <i class="far fa-star"></i>
                         </div>
 
-                        <button id="boton-compra" class="boton-compra">COMPRAR</button>
+                        <button id="boton-compra" class="boton-compra" aria-label="comprar">COMPRAR</button>
                     </div>
 
                 </article>
 
                 <article class="tarjeta grilla" id="producto" data-nombre="nintendo switch" data-categoria="consolas"
-                    data-precio="46999" data-rating="5">
+                    data-precio="46999" data-rating="5" aria-labelledby="nintendo-switch">
                     <div class="imagen-producto">
                         <img src="imagenes/nintendo.jpg" alt="nintendo switch">
                     </div>
@@ -733,7 +733,7 @@
                             consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
-                        <div class="puntaje-producto">
+                        <div class="puntaje-producto" aria-labelledby="cinco-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -741,13 +741,13 @@
                             <i class="fas fa-star"></i>
                         </div>
 
-                        <button id="boton-compra" class="boton-compra">COMPRAR</button>
+                        <button id="boton-compra" class="boton-compra" aria-label="comprar">COMPRAR</button>
                     </div>
 
                 </article>
 
                 <article class="tarjeta grilla" id="producto" data-nombre="notebook asus" data-categoria="notebooks"
-                    data-precio="32999" data-rating="1">
+                    data-precio="32999" data-rating="1" aria-labelledby="notebook-asus">
                     <div class="imagen-producto">
                         <img src="imagenes/asus.jpg" alt="notebook asus">
                     </div>
@@ -758,7 +758,7 @@
                             consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
-                        <div class="puntaje-producto">
+                        <div class="puntaje-producto" aria-labelledby="una-estrella">
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
@@ -766,13 +766,13 @@
                             <i class="far fa-star"></i>
                         </div>
 
-                        <button id="boton-compra" class="boton-compra">COMPRAR</button>
+                        <button id="boton-compra" class="boton-compra" aria-label="comprar">COMPRAR</button>
                     </div>
 
                 </article>
 
                 <article class="tarjeta grilla" id="producto" data-nombre="notebook msi" data-categoria="notebooks"
-                    data-precio="37999" data-rating="3">
+                    data-precio="37999" data-rating="3" aria-labelledby="notebookmsi">
                     <div class="imagen-producto">
                         <img src="imagenes/msi.jpg" alt="notebook msi">
                     </div>
@@ -783,7 +783,7 @@
                             consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
-                        <div class="puntaje-producto">
+                        <div class="puntaje-producto" aria-labelledby="tres-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -791,14 +791,14 @@
                             <i class="far fa-star"></i>
                         </div>
 
-                        <button id="boton-compra" class="boton-compra">COMPRAR</button>
+                        <button id="boton-compra" class="boton-compra" aria-label="comprar">COMPRAR</button>
                     </div>
 
                 </article>
 
                 <article class="tarjeta grilla" id="producto" data-nombre="headphones philips"
                     data-categoria="accesorios" data-precio="11999" data-rating="2">
-                    <div class="imagen-producto">
+                    <div class="imagen-producto" aria-labelledby="headphones philips">
                         <img src="imagenes/philips.jpg" alt="headphones philips">
                     </div>
                     <div id="contenido" class="contenido-producto-grilla">
@@ -808,7 +808,7 @@
                             consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
-                        <div class="puntaje-producto">
+                        <div class="puntaje-producto" aria-labelledby="dos-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
@@ -816,13 +816,13 @@
                             <i class="far fa-star"></i>
                         </div>
 
-                        <button id="boton-compra" class="boton-compra">COMPRAR</button>
+                        <button id="boton-compra" class="boton-compra" aria-label="comprar">COMPRAR</button>
                     </div>
 
                 </article>
 
                 <article class="tarjeta grilla" id="producto" data-nombre="macbook" data-categoria="notebooks"
-                    data-precio="1199999" data-rating="4">
+                    data-precio="1199999" data-rating="4" aria-labelledby="macbook">
                     <div class="imagen-producto">
                         <img src="imagenes/macbook.jpg" alt="macbook">
                     </div>
@@ -833,7 +833,7 @@
                             consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
-                        <div class="puntaje-producto">
+                        <div class="puntaje-producto" aria-labelledby="tres-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -841,13 +841,13 @@
                             <i class="far fa-star"></i>
                         </div>
 
-                        <button id="boton-compra" class="boton-compra">COMPRAR</button>
+                        <button id="boton-compra" class="boton-compra" aria-label="comprar">COMPRAR</button>
                     </div>
 
                 </article>
 
                 <article class="tarjeta grilla" id="producto" data-nombre="iphone" data-categoria="celulares"
-                    data-precio="79999" data-rating="3">
+                    data-precio="79999" data-rating="3" aria-labelledby="iphone">
                     <div class="imagen-producto">
                         <img src="imagenes/iphone.jpg" alt="iphone">
                     </div>
@@ -858,7 +858,7 @@
                             consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
-                        <div class="puntaje-producto">
+                        <div class="puntaje-producto" aria-labelledby="tres-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -866,13 +866,13 @@
                             <i class="far fa-star"></i>
                         </div>
 
-                        <button id="boton-compra" class="boton-compra">COMPRAR</button>
+                        <button id="boton-compra" class="boton-compra" aria-label="comprar">COMPRAR</button>
                     </div>
 
                 </article>
 
                 <article class="tarjeta grilla" id="producto" data-nombre="xboxone" data-categoria="consolas"
-                    data-precio="69999" data-rating="4">
+                    data-precio="69999" data-rating="4" aria-labelledby="xbox-one">
                     <div class="imagen-producto">
                         <img src="imagenes/xbox.jpg" alt="xboxone">
                     </div>
@@ -883,7 +883,7 @@
                             consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
-                        <div class="puntaje-producto">
+                        <div class="puntaje-producto" aria-labelledby="cuatro-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -891,12 +891,12 @@
                             <i class="far fa-star"></i>
                         </div>
 
-                        <button id="boton-compra" class="boton-compra">COMPRAR</button>
+                        <button id="boton-compra" class="boton-compra" aria-label="comprar">COMPRAR</button>
                     </div>
 
                 </article>
                 <article class="tarjeta grilla" id="producto" data-nombre="mouse gamer" data-categoria="accesorios"
-                    data-precio="4999" data-rating="5">
+                    data-precio="4999" data-rating="5" aria-labelledby="mouse-gamer">
                     <div class="imagen-producto">
                         <img src="imagenes/gamer.jpg" alt="mouse gamer">
                     </div>
@@ -907,7 +907,7 @@
                             consectetur adipisicing elit.
                             Suscipit nulla incidunt, laboriosam magni reiciendis cum autem? Fuga autem porro ipsum nobis
                             velit accusamus a corporis ullam obcaecati optio. Natus, iste?</p>
-                        <div class="puntaje-producto">
+                        <div class="puntaje-producto" aria-labelledby="cinco-estrellas">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -915,7 +915,7 @@
                             <i class="fas fa-star"></i>
                         </div>
 
-                        <button id="boton-compra" class="boton-compra">COMPRAR</button>
+                        <button id="boton-compra" class="boton-compra" aria-label="comprar">COMPRAR</button>
                     </div>
 
                 </article>
@@ -929,7 +929,7 @@
     <!--FOOTER-->
     <footer class="footer-general">
         <div class="logo-container"> <img src="imagenes/iso_blanco.svg" alt="logo ada">ADA SHOP</div>
-        <p> Gracias por visitarnos! <i class="fas fa-heart"></i></p>
+        <p aria-labelledby="gracias-por-visitarnos"> Gracias por visitarnos! <i class="fas fa-heart"></i></p>
 
     </footer>
 
