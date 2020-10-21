@@ -4,10 +4,7 @@ const botonLista = document.getElementById("boton-lista");
 const cards = document.querySelectorAll(".tarjeta");
 const descripcionesProductos = document.querySelectorAll("#descripcion-producto");
 const contenidosProductos = document.querySelectorAll("#contenido");
-// console.log(botonGrilla)
-// console.log(botonLista)
-// console.log(tarjetas)
-// console.log(descripcionProducto)
+
 
 //DE GRILLA A LISTA
 botonLista.onclick = () => {
