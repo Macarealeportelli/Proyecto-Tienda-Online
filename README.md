@@ -17,6 +17,7 @@ Al finalizar el maquetado para la versión de escritorio se procedió a realizar
 
 L@s invito a visitar mi página en:
 
+https://macarealeportelli.github.io/Proyecto-Tienda-Online/
 
 
 
@@ -40,3 +41,5 @@ The basic functionalities of the proposed page were emphasized, with the intenti
 At the end of the layout for the desktop version, we proceeded to use media query to adapt it to the different devices on the market.
 
 I invite you to visit my page at:
+
+https://macarealeportelli.github.io/Proyecto-Tienda-Online/
