@@ -481,15 +481,14 @@ botonFinalizarCompra.onclick=()=>{
 
 //-------------FUNCIONALIDADES RESPONSIVE------------------------------
 const botonFiltrosResponsive = document.getElementById('boton-filtros-responsive');
-const asideFiltros = document.getElementById('filtros-normal');
 const filtrosResponsive = document.getElementById('overlay-filtros');
 const cerrarMenuFiltros = document.getElementById('cerrar-menu-filtros')
 
 botonFiltrosResponsive.onclick=()=>{
-    filtrosResponsive.classList.remove('hidden')
+    filtrosResponsive.classList.remove('hidden');
 }
 
 cerrarMenuFiltros.onclick=()=>{
-    filtrosResponsive.classList.add('hidden')
-    body.classList.remove ('no-scroll')
+    filtrosResponsive.classList.add('hidden');
+    body.classList.remove ('no-scroll');
 }
