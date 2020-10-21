@@ -635,6 +635,14 @@ input[type=email] {
         z-index: 4;
     }
     
+    #filtros-normal{
+        display:none;
+    }
+
+    #ver-como{
+        display: none;
+    }
+
     #limpiar-filtros, #filtro-nombre{
         background-color: white;
     }
@@ -689,6 +697,16 @@ input[type=email] {
         z-index: 4;
     }
     
+    #filtros-normal{
+        display:none;
+    }
+
+    #ver-como{
+        display: none;
+    }
+
+
+
     #limpiar-filtros, #filtro-nombre{
         background-color: white;
     }
@@ -743,7 +761,15 @@ input[type=email] {
         padding: 20px;
         z-index: 4;
     }
-    
+
+    #filtros-normal{
+        display:none;
+    }
+
+    #ver-como{
+        display: none;
+    }
+
     #limpiar-filtros, #filtro-nombre{
         background-color: white;
     }
