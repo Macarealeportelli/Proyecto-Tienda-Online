@@ -486,10 +486,7 @@ const filtrosResponsive = document.getElementById('overlay-filtros');
 const cerrarMenuFiltros = document.getElementById('cerrar-menu-filtros')
 
 botonFiltrosResponsive.onclick=()=>{
-    asideFiltros.classList.add('hidden')
     filtrosResponsive.classList.remove('hidden')
-    body.classList.add('no-scroll')
-   
 }
 
 cerrarMenuFiltros.onclick=()=>{
