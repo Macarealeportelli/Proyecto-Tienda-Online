@@ -46,6 +46,26 @@ botonGrilla.onclick = () => {
     }
 }
 
+
+// // //CONTADOR DE PRODUCTOS MOSTRADOS
+// const mostrarProductos = document.getElementById("mostrando-productos")
+// let contadorDeProductosEscondidos = 0
+
+// const tarjetasEscondidas =()=>{
+//     for (let card of cards){
+//         if (card.classList.contains('hidden') === true){
+//             contadorDeProductosEscondidos = contadorDeProductosEscondidos + 1
+//         }
+//     }
+//     return contadorDeProductosEscondidos
+// }
+
+// const resultadoDeProductosMostrados=()=>{
+//     const resultado = 12 - tarjetasEscondidas()
+//     mostrarProductos.textContent = resultado
+// }
+
+
 //FILTROS
 const filtroBusqueda = document.getElementById("filtro-nombre");
 const filtroCategoria = document.querySelectorAll("#categoria");
@@ -186,19 +206,25 @@ const filtrarTarjetas = () => {
 
 filtroBusqueda.oninput = () => {
     filtrarTarjetas();
+    
 }
 
 for (let checkboxCategoria of filtroCategoria) {
     checkboxCategoria.oninput = () => {
         filtrarTarjetas();
+       
     }
 }
 
 for (let checkboxRating of filtroRating) {
     checkboxRating.oninput = () => {
         filtrarTarjetas();
+       
     }
 }
+
+
+
 
 //LIMPIAR FILTROS
 const botonLimpiarFiltros = document.getElementById("limpiar-filtros");
@@ -216,23 +242,10 @@ botonLimpiarFiltros.onclick = () => {
     }
 }
 
-// //CONTADOR DE PRODUCTOS MOSTRADOS
-// const mostrarProductos = document.getElementById("mostrando-productos")
-// let contadorDeProductosEscondidos = 0
 
-// const tarjetasEscondidas =()=>{
-//     for (let card of cards){
-//         if (card.classList.contains('hidden') === true){
-//             contadorDeProductosEscondidos = contadorDeProductosEscondidos + 1
-//         }
-//     }
-//     return contadorDeProductosEscondidos
-// }
 
-// const resultadoDeProductosMostrados=()=>{
-//     const resultado = 12 - tarjetasEscondidas()
-//     mostrarProductos.textContent = resultado
-// }
+
+
 
 
 //APARICIÓN DE MODAL DEL CARRITO
@@ -461,7 +474,7 @@ seguirComprando.onclick=()=>{
 //--envia el formulario y cierra el carrito vacio
 const botonFinalizarCompra = document.getElementById('finalizar-compra');
 const formulario = document.getElementById('formulario-datos');
-const inputNombre = document.getElementById('input-nombre');
+// const inputNombre = document.getElementById('input-nombre');
 const inputMail = document.getElementById('input-mail');
 
 
