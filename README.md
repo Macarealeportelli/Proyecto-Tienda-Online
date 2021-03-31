@@ -43,3 +43,5 @@ At the end of the layout for the desktop version, we proceeded to use media quer
 I invite you to visit my page at:
 
 https://macarealeportelli.github.io/Proyecto-Tienda-Online/
+
+hola
